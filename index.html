@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Head content remains the same -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarth Shroff - Game Developer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/featured-projects.css">
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Your existing styles remain the same */
+        :root {
+            --primary-dark: #0a192f;
+            --secondary-dark: #112240;
+            --text-primary: #ccd6f6;
+            --text-secondary: #8892b0;
+            --accent: #00BCD4;
+            /* Changed from #64ffda to Material Design cyan */
+            --accent-dark: #00ACC1;
+            /* Slightly darker version for hover states */
+            --nav-height: 70px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: var(--primary-dark);
+            color: var(--text-primary);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: var(--nav-height);
+            background-color: rgba(10, 25, 47, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links a::before {
+            content: "0" counter(nav-counter) ".";
+            margin-right: 5px;
+            color: var(--accent);
+            font-size: 0.8rem;
+        }
+
+        .nav-links a {
+            counter-increment: nav-counter;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .hamburger .line {
+            width: 25px;
+            height: 2px;
+            background-color: var(--accent);
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: var(--nav-height);
+            right: 0;
+            width: 75%;
+            height: calc(100vh - var(--nav-height));
+            background-color: var(--secondary-dark);
+            padding: 2rem;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.2rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+        }
+
+        .mobile-menu a:hover {
+            color: var(--accent);
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .small-heading {
+            color: var(--accent);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.2rem;
+            margin-bottom: 0.1rem;
+        }
+
+        .main-heading {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 4.5rem;
+            color: #ccd6f6;
+            margin-bottom: 0rem;
+            font-weight: 700;
+        }
+
+        .sub-heading {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3.5rem;
+            color: #8892b0;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            color: #8892b0;
+            font-size: 1.2rem;
+            max-width: 540px;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            color: #fff;
+            background: var(--accent);
+            /* Solid background instead of gradient */
+            border: none;
+            border-radius: 4px;
+            /* More subtle rounded corners for material design */
+            padding: 12px 24px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1rem;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* More subtle shadow */
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--accent-dark);
+            /* Darker accent on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Slightly larger shadow on hover */
+            transform: translateY(-2px);
+        }
+
+        .cta-button:active {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hamburger.active .line:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .hamburger.active .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .line:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: 60px 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .projects-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .project-card {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            align-items: center;
+            position: relative;
+            transition: transform 0.3s ease;
+            /* Added for hover effect */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            /* Added hover effect from main.css */
+        }
+
+        .project-content {
+            grid-column: 1 / 8;
+            grid-row: 1 / -1;
+            position: relative;
+            z-index: 2;
+            background-color: var(--primary-dark);
+            padding: 25px;
+            border-radius: 4px;
+        }
+
+        .project-card.project-left .project-content {
+            grid-column: 7 / -1;
+            text-align: right;
+        }
+
+        .project-overline {
+            margin: 10px 0;
+            color: var(--accent);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        .project-title {
+            color: var(--text-primary);
+            font-size: clamp(24px, 5vw, 28px);
+            margin-bottom: 20px;
+        }
+
+        .project-description {
+            background-color: var(--secondary-dark);
+            padding: 25px;
+            border-radius: 4px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        /* Project Tech List Styling Update */
+        .project-tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 0;
+            margin: 25px 0 10px;
+            list-style: none;
+        }
+
+        .project-card.project-left .project-tech-list {
+            justify-content: flex-end;
+        }
+
+        .project-tech-list li {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 13px;
+            color: #fff;
+            background: rgba(0, 188, 212, 0.2);
+            /* Added background color from main.css */
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .project-card.project-left .project-links {
+            justify-content: flex-end;
+        }
+
+        .project-links a {
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+
+        .project-links a:hover {
+            color: var(--accent);
+        }
+
+        .project-links svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .project-image {
+            grid-column: 6 / -1;
+            grid-row: 1 / -1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card.project-left .project-image {
+            grid-column: 1 / 7;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: contain;
+            /* Changed from default to contain to match main.css */
+            border-radius: 4px;
+            filter: grayscale(100%) contrast(1.1);
+            transition: filter 0.3s ease, transform 0.3s ease;
+            /* Added transform transition */
+        }
+
+        .project-image:hover img {
+            filter: none;
+            transform: scale(1.05);
+            /* Added image zoom on hover to match main.css */
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                grid-template-columns: 1fr;
+            }
+
+            .project-content,
+            .project-card.project-left .project-content {
+                grid-column: 1 / -1;
+                padding: 40px 20px;
+                text-align: left;
+                background-color: transparent;
+            }
+
+            .project-image,
+            .project-card.project-left .project-image {
+                grid-column: 1 / -1;
+                opacity: 0.25;
+                max-width: 100%;
+            }
+
+            .project-tech-list,
+            .project-card.project-left .project-tech-list {
+                justify-content: flex-start;
+            }
+
+            .project-links,
+            .project-card.project-left .project-links {
+                justify-content: flex-start;
+            }
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 60px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 50px;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(140px, 200px));
+            gap: 0 10px;
+            padding: 0;
+            margin: 20px 0 0 0;
+            overflow: hidden;
+            list-style: none;
+        }
+
+        .skills-list li {
+            position: relative;
+            padding-left: 20px;
+            /* Add padding to make room for the arrow marker */
+            margin-bottom: 10px;
+            /* Add space between list items */
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .skills-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* Adjust section margins */
+        section {
+            margin-bottom: 60px;
+            /* Add this to reduce space between sections */
+        }
+
+        /* Footer */
+        .footer {
+            padding: 50px 0;
+            background-color: var(--secondary-dark);
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .footer-content {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .footer-social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .footer-social h3 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            /* Center the links */
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        .social-links svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-card {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                /* Reduced from default to 1rem to match main.css */
+            }
+
+            .project-content {
+                grid-area: 1 / 1 / -1 / -1;
+                padding: 20px;
+            }
+
+            .project-image {
+                grid-area: 1 / 1 / -1 / -1;
+                opacity: 0.2;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">SS</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#professional-projects">Professional Projects</a>
+                <a href="projects.html#personal-projects">Prototypes & Demos</a>
+                <!--<a href="contact.html">Contact</a>-->
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#professional-projects">Professional Projects</a>
+        <a href="projects.html#personal-projects">Prototypes & Demos</a>
+        <!--<a href="contact.html">Contact</a>-->
+    </div>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <p class="small-heading">Hi, my name is</p>
+            <h1 class="main-heading">Samarth Shroff.</h1>
+            <h2 class="sub-heading">Driving Game Success.</h2>
+            <p class="description">
+                Results-oriented developer with a passion for high-performance gameplay. Expertise in optimization,
+                multiplayer, and
+                revenue growth. Familiar with Unity, Unreal Engine, and cocos2dx, with hands-on experience in game
+                development technologies.
+            </p>
+            <a href="projects.html" class="cta-button">Check out my work!</a>
+        </div>
+    </section>
+
+    <section id="professional-projects" class="projects-section featured-projects">
+        <div class="projects-grid">
+            <!-- Content will be injected by JavaScript -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <!-- Content will be injected here -->
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="social-links">
+                    <a href="http://www.linkedin.com/in/samarth-shroff/" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/samarthshroff" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Samarth Shroff. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
