@@ -15,9 +15,9 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unity", "C#", "RevenueCat", "Firebase", "Unity Gaming Services", "Cognito"],
-            image: "../assets/professional-projects/wopp/main.png",
+            image: "../assets/professional-projects/wopp/main.PNG",
             mediaItems: [
-                { type: 'image', src: '../assets/professional-projects/wopp/main.png' },
+                { type: 'image', src: '../assets/professional-projects/wopp/main.PNG' },
                 { type: 'video', src: '../assets/professional-projects/wopp/vid1' },
                 { type: 'image', src: '../assets/professional-projects/wopp/1.png' },
                 { type: 'image', src: '../assets/professional-projects/wopp/2.png' },
@@ -143,9 +143,11 @@ export const professionalProjectsContent = {
                     <li>Cab in the City (iOS/Android): Served as the lead developer for this Unity 3D project, and another unreleased Unity 3D game.</li>
                     <li>SABurbia.com: Contributed to pre-production tasks, including class diagram and technical design document creation. Implemented pthread, XML parsing, and HTTP connection (cURL) functionalities in C++.</li>
                     <li>Team Lead Experience: Led development teams for the following projects:</li>
-                        <li>Traffic Controller (iOS/Android)</li>
-                        <li>Nectar Hunt (iOS)</li>
-                        <li>Titanic's Keys of the Past (iOS/Android)</li>
+                        <ul>
+                            <li>Traffic Controller (iOS/Android)</li>
+                            <li>Nectar Hunt (iOS)</li>
+                            <li>Titanic's Keys of the Past (iOS/Android)</li>
+                        </ul>
                     <li>The Lost Cases of 221B Baker Street: Provided critical technical support, resolving numerous crash issues and integrating publisher and third-party APIs.</li>
                     <li>JavaMe Games: Developed several games using JavaMe (now obsolete).</li>
                 </ul>
@@ -220,6 +222,7 @@ window.finishDrag = function() {
 // Update the video creation in the openModal function
 
 // Update the openModal function to properly initialize drag variables
+// Update the openModal function to better handle HTML descriptions
 window.openModal = (title, description, mediaItems) => {
     const modal = document.createElement('div');
     modal.classList.add('project-details-modal');
@@ -242,7 +245,7 @@ window.openModal = (title, description, mediaItems) => {
     
     modal.innerHTML = `
         <div class="details-modal-content">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <span class="close-modal">&times;</span>
             <h2>${title}</h2>
             <div class="media-section">
                 ${carouselNav}
@@ -264,12 +267,16 @@ window.openModal = (title, description, mediaItems) => {
                 ${indicators}
             </div>
             <div class="description-section">
-                <div>${description}</div>
+                ${description}
             </div>
         </div>
     `;
     
     document.body.appendChild(modal);
+    
+    // Add the event listener for close button AFTER appending to the DOM
+    const closeButton = modal.querySelector('.close-modal');
+    closeButton.addEventListener('click', closeModal);
     
     // Initialize the carousel
     initCarousel(mediaItems.length);

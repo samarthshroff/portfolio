@@ -9,7 +9,7 @@
 /* Existing Project Card Styles */
 /* New Project Card Styles */
 .project-card-new {
-    background: #383838;
+    background: #00ACC1;
     /* Black background */
     border-radius: 8px;
     overflow: hidden;
@@ -17,7 +17,7 @@
     cursor: pointer;
     color: white;
     max-width: 280px;
-    max-height: 400px;
+    max-height: 450px;
     margin: 0 auto;
     /* Text color */
 }
@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #383838;
+    background-color: #00ACC1;
     /* Light background color for empty space */
 }
 
@@ -61,6 +61,7 @@
     /* Adjust title size */
     margin: 0.5rem 0;
     /* Margin for spacing */
+    color: #fff;
 }
 
 .project-tech-list-new {
@@ -75,7 +76,7 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
     color: #fff;
-    background: rgba(0, 188, 212, 0.2);
+    background:rgba(56,56,56,1);/* rgba(0, 188, 212, 0.2);*/
     /* Updated to use the new color with transparency */
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
@@ -133,10 +134,29 @@
 
 .close-modal {
     position: absolute;
-    right: 1rem;
-    top: 1rem;
-    font-size: 1.5rem;
+    right: 15px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
     cursor: pointer;
+    z-index: 1001;
+    width: 30px;
+    height: 30px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.close-modal:hover {
+    color: #000;
+    background-color: #ddd;
+    transform: scale(1.1);
 }
 
 /* Existing About Section Styles */
@@ -265,19 +285,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .details-modal-content {
+    position: relative;
     background: white;
-    padding: 20px;
+    padding: 30px 20px 20px;
+    /* Add more padding at the top for the close button */
     border-radius: 8px;
     width: 75%;
     max-height: 90vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    /* Add some spacing between elements */
     gap: 15px;
+    z-index: 1001;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .details-modal-content img {
@@ -480,3 +504,69 @@
     background-color: #5cd1a0;
     /* Darker shade on hover */
 }
+
+/* For dark theme support */
+/*@media (prefers-color-scheme: dark) {
+    .close-modal {
+        background-color: #444;
+        color: #fff;
+    }
+
+    .close-modal:hover {
+        background-color: #555;
+    }
+
+    .details-modal-content {
+        background: #333;
+        color: #fff;
+    }
+}*/
+
+/* Improved List Styling in Modal Content */
+.description-section ul {
+    padding-left: 25px;
+    margin: 10px 0;
+    list-style-type: disc;
+}
+
+.description-section ul li {
+    margin-bottom: 8px;
+    position: relative;
+    line-height: 1.5;
+}
+
+/* Styling for nested lists */
+.description-section ul ul,
+.description-section ul ol {
+    margin-top: 8px;
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+/* Ensure list bullets are visible */
+.description-section ul li::marker {
+    color: black;/*var(--accent, #00BCD4);*/
+}
+
+/* Add proper spacing for paragraphs inside description */
+.description-section p {
+    margin-bottom: 15px;
+}
+
+/* Make sure the description text has good readability */
+.description-section {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Dark mode support */
+/*@media (prefers-color-scheme: dark) {
+    .description-section {
+        color: #f0f0f0;
+    }
+
+    .description-section ul li::marker {
+        color: var(--accent, #4ecdc4);
+    }
+}*/

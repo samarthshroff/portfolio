@@ -33,8 +33,8 @@
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            background-color: white;
-            color: black;
+            background-color: var(--primary-dark);
+            color: #fff;
         }
     
         nav {
@@ -69,6 +69,7 @@
         .nav-links {
             display: flex;
             gap: 2.5rem;
+            z-index: 10;
         }
     
         .nav-links a {
@@ -271,6 +272,7 @@
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
+                z-index: 10;
             }
     
             .hamburger {
