@@ -15,9 +15,9 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unity", "C#", "RevenueCat", "Firebase", "Unity Gaming Services", "Cognito"],
-            image: "../assets/professional-projects/wopp/main.PNG",
+            image: "../assets/professional-projects/wopp/main.png",
             mediaItems: [
-                { type: 'image', src: '../assets/professional-projects/wopp/main.PNG' },
+                { type: 'image', src: '../assets/professional-projects/wopp/main.png' },
                 { type: 'video', src: '../assets/professional-projects/wopp/vid1' },
                 { type: 'image', src: '../assets/professional-projects/wopp/1.png' },
                 { type: 'image', src: '../assets/professional-projects/wopp/2.png' },
