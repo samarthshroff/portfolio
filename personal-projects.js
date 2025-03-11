@@ -100,7 +100,7 @@ export const personalProjectsContent = {
                 <ul>
                     <li>Character animations: Idle, BlendSpace for Walk and Run based on speed.</li>
                     <li>Using <strong>Prototype design pattern</strong> for Enemies.</li>
-                    <li>Using Data table to store Enemy types and other information for making the Enemy system data driven.</li>
+                    <li>Using Data table to store Enemies and their information per level for making the Enemy system data driven.</li>
                     <li>Editor Tool in Python for recreating DataTable from csv files found in a predefined directory during each editor launch as there is a known issue in UE5 that corrupts the data tables.</li>
                     <li>Camera Follows the character.</li> 
                     <li>Using Enhanced Input System for moving player to the position of mouse clicks.</li>
