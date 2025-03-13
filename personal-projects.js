@@ -99,7 +99,7 @@ export const personalProjectsContent = {
                 <p>A prototype clone of the famous Vampire Survivor game using C++. This demonstrates:</p>
                 <ul>
                     <li>Character animations: Idle, BlendSpace for Walk and Run based on speed.</li>
-                    <li>Using <strong>Prototype design pattern</strong> for Enemies.</li>
+                    <li>Using <strong>Prototype design pattern</strong> for spawning Enemies.</li>
                     <li>Using Data table to store Enemies and their information per level for making the Enemy system data driven.</li>
                     <li>Editor Tool in Python for recreating DataTable from csv files found in a predefined directory during each editor launch as there is a known issue in UE5 that corrupts the data tables.</li>
                     <li>Camera Follows the character.</li> 
@@ -107,8 +107,7 @@ export const personalProjectsContent = {
                     <li>Character and Animation imported from Mixamo.</li>
                 </ul>
                 <p>To-do:</p>
-                <ul>
-                    <li>Spawning Enemies.</li>
+                <ul>                    
                     <li>Using Gameplay ability system for player and enemies.</li>                    
                     <li>Use Behavior Tree for Enemies.</li>
                     <li>Niagara Effects, Health and UI widgets.</li>
@@ -116,7 +115,7 @@ export const personalProjectsContent = {
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
             image: "../assets/personal-projects/vsc/splash.png",
-            githubLink: "https://github.com/samarthshroff",
+            githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
             mediaItems: [
                 { type: 'image', src: '../assets/personal-projects/vsc/splash.png' },
                 { type: 'image', src: '../assets/personal-projects/vsc/1.png' },
