@@ -3,15 +3,14 @@ export const professionalProjectsContent = {
         {
             title: "World of Peppa Pig",
             description: `
-                <p>Game Development, Platform SDK Development and Revenue Optimization:</p>
+                <p>An app generating $10M in annual revenue and 2M monthly active users (MAU). My contributions are mainly towards Game Development, Platform SDK Development and Revenue Optimization:</p>
                 <ul>
-                    <li>Revenue & User Growth: Drove significant revenue and user growth for a platform generating $10M in annual revenue and reaching 2M monthly active users (MAU).</li>
                     <li>Revenue & Conversion Enhancement: Increased yearly revenue by $500K and conversion rates by 20% through the development and implementation of a localized paywall and purchase system.</li>
                     <li>Maintenance Reduction: Decreased project maintenance complexity by 40% through the implementation of a forced update system.</li>
                     <li>User Engagement Improvement: Boosted user engagement by 30% through the integration of comprehensive analytics services.</li>
                     <li>Performance Optimization: Optimized app performance using Firebase Remote Config for A/B testing and real-time updates. Further enhanced user experience and reduced app size by designing an asset delivery system utilizing Unity Addressables.</li>
-                    <li>Development Efficiency: Reduced development and integration time by creating and implementing custom Editor tools using C# and Python.</li> 
-                    <li>Agile Development & Integrations: Led SCRUM-based regular releases, automation initiatives, and platform SDK integrations.</li>
+                    <li>Development Efficiency: Reduced development and integration time by creating and implementing custom Editor tools using C# and Unity API.</li>
+                    <li>Agile Development & Integrations: Led SCRUM-based regular releases, automation initiatives, and platform SDK integrations.</li>                    
                 </ul>
             `,
             technologies: ["Unity", "C#", "RevenueCat", "Firebase", "Unity Gaming Services", "Cognito"],
