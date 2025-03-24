@@ -22,11 +22,11 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 4.27", "C++", "Blueprints"],
-            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/fbue4/splash.jpg",
+            image: "https://samarthshroff.com/personal-projects/fbue4/splash.jpg",
             githubLink: "https://github.com/samarthshroff/FlockingBehaviorUnreal", // Add GitHub link here
             mediaItems: [
-                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/fbue4/splash.jpg' },
-                { type: 'video', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/fbue4/vid' }
+                { type: 'image', src: 'https://samarthshroff.com/personal-projects/fbue4/splash.jpg' },
+                { type: 'video', src: 'https://samarthshroff.com/personal-projects/fbue4/vid' }
             ]
         },
         {
@@ -46,11 +46,11 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Python", "PyGame"],
-            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/fc/splash.png",
+            image: "https://samarthshroff.com/personal-projects/fc/splash.png",
             githubLink: "https://github.com/samarthshroff/FreeCell",
             mediaItems: [
-                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/fc/splash.png' },
-                { type: 'video', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/fc/vid' }
+                { type: 'image', src: 'https://samarthshroff.com/personal-projects/fc/splash.png' },
+                { type: 'video', src: 'https://samarthshroff.com/personal-projects/fc/vid' }
             ]
         },
         {
@@ -84,13 +84,13 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
-            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/tps/splash.jpg",
+            image: "https://samarthshroff.com/personal-projects/tps/splash.jpg",
             githubLink: "https://github.com/samarthshroff/ThirdPersonShooter",
             mediaItems: [
-                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/tps/splash.jpg' },
-                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/tps/1.png' },
-                { type: 'video', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/tps/vid' },
-                { type: 'video', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/tps/vid1' }
+                { type: 'image', src: 'https://samarthshroff.com/personal-projects/tps/splash.jpg' },
+                { type: 'image', src: 'https://samarthshroff.com/personal-projects/tps/1.png' },
+                { type: 'video', src: 'https://samarthshroff.com/personal-projects/tps/vid' },
+                { type: 'video', src: 'https://samarthshroff.com/personal-projects/tps/vid1' }
             ]
         },
         {
@@ -114,12 +114,12 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
-            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/vsc/splash.png",
+            image: "https://samarthshroff.com/personal-projects/vsc/splash.png",
             githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
             mediaItems: [
-                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/vsc/splash.png' },
-                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/vsc/1.png' },
-                { type: 'video', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/personal-projects/vsc/vid' }
+                { type: 'image', src: 'https://samarthshroff.com/personal-projects/vsc/splash.png' },
+                { type: 'image', src: 'https://samarthshroff.com/personal-projects/vsc/1.png' },
+                { type: 'video', src: 'https://samarthshroff.com/personal-projects/vsc/vid' }
             ]
         }
     ]
