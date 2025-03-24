@@ -1,4 +1,4 @@
-import { assetUrl } from './index.js';
+export const assetUrl = process.env.ASSET_BASE_URL || '';
 
 export const professionalProjectsContent = {
     projects: [

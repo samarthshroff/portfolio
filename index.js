@@ -21,7 +21,7 @@ import { setupProfessionalProjects } from './featured-projects.js';
 //import { initializeSEO } from './seo/meta';
 //import { generateSitemap } from './seo/sitemap';
 
-export const assetUrl = process.env.ASSET_BASE_URL || '';
+
 
 console.log('index.js loaded'); // Debug message
 
