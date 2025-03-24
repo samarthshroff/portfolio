@@ -14,18 +14,18 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unity", "C#", "RevenueCat", "Firebase", "Unity Gaming Services", "Cognito"],
-            image: "../assets/professional-projects/wopp/main.png",
+            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/main.png",
             mediaItems: [
-                { type: 'image', src: '../assets/professional-projects/wopp/main.png' },
-                { type: 'video', src: '../assets/professional-projects/wopp/vid1' },
-                { type: 'image', src: '../assets/professional-projects/wopp/1.png' },
-                { type: 'image', src: '../assets/professional-projects/wopp/2.png' },
-                { type: 'video', src: '../assets/professional-projects/wopp/vid2' },
-                { type: 'video', src: '../assets/professional-projects/wopp/vid3' },                
-                { type: 'image', src: '../assets/professional-projects/wopp/3.png' },
-                { type: 'image', src: '../assets/professional-projects/wopp/4.png' },
-                { type: 'image', src: '../assets/professional-projects/wopp/5.png' },
-                { type: 'image', src: '../assets/professional-projects/wopp/6.png' }
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/main.png' },
+                { type: 'video', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/vid1' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/1.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/2.png' },
+                { type: 'video', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/vid2' },
+                { type: 'video', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/vid3' },                
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/3.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/4.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/5.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/wopp/6.png' }
             ]
         },
         {
@@ -38,13 +38,13 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["C++", "Cocos2dx"],
-            image: "../assets/professional-projects/cpl/main.png",
+            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/cpl/main.png",
             mediaItems: [
-                { type: 'image', src: '../assets/professional-projects/cpl/main.png' },
-                { type: 'image', src: '../assets/professional-projects/cpl/2.png' },
-                { type: 'image', src: '../assets/professional-projects/cpl/3.png' },
-                { type: 'image', src: '../assets/professional-projects/cpl/4.png' },
-                { type: 'image', src: '../assets/professional-projects/cpl/5.png' }
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/cpl/main.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/cpl/2.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/cpl/3.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/cpl/4.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/cpl/5.png' }
             ]
         },
         {
@@ -58,13 +58,13 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["C++", "Cocos2dx"],
-            image: "../assets/professional-projects/nc/main.png",
+            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/nc/main.png",
             mediaItems: [
-                { type: 'image', src: '../assets/professional-projects/nc/main.png' },
-                { type: 'image', src: '../assets/professional-projects/nc/2.png' },
-                { type: 'image', src: '../assets/professional-projects/nc/3.png' },
-                { type: 'image', src: '../assets/professional-projects/nc/4.png' },
-                { type: 'image', src: '../assets/professional-projects/nc/5.png' }
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/nc/main.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/nc/2.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/nc/3.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/nc/4.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/nc/5.png' }
             ]
         },
         {
@@ -79,14 +79,14 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["C++", "Cocos2dx"],
-            image: "../assets/professional-projects/salem/main.png",
+            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/salem/main.png",
             mediaItems: [
-                { type: 'image', src: '../assets/professional-projects/salem/main.png' },
-                { type: 'image', src: '../assets/professional-projects/salem/1.png' },
-                { type: 'image', src: '../assets/professional-projects/salem/2.png' },
-                { type: 'image', src: '../assets/professional-projects/salem/3.png' },
-                { type: 'image', src: '../assets/professional-projects/salem/4.png' },
-                { type: 'image', src: '../assets/professional-projects/salem/5.png' }
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/salem/main.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/salem/1.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/salem/2.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/salem/3.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/salem/4.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/salem/5.png' }
             ]
         },
         {
@@ -102,14 +102,14 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["C++", "Cocos2dx"],
-            image: "../assets/professional-projects/eob/main.png",
+            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/eob/main.png",
             mediaItems: [
-                { type: 'image', src: '../assets/professional-projects/eob/main.png' },
-                { type: 'image', src: '../assets/professional-projects/eob/1.png' },
-                { type: 'image', src: '../assets/professional-projects/eob/2.png' },
-                { type: 'image', src: '../assets/professional-projects/eob/3.png' },
-                { type: 'image', src: '../assets/professional-projects/eob/4.png' },
-                { type: 'image', src: '../assets/professional-projects/eob/5.png' }
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/eob/main.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/eob/1.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/eob/2.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/eob/3.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/eob/4.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/eob/5.png' }
             ]
         },
         {
@@ -123,14 +123,14 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["Objective-C"],
-            image: "../assets/professional-projects/sss/main.png",
+            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/sss/main.png",
             mediaItems: [
-                { type: 'image', src: '../assets/professional-projects/sss/main.png' },
-                { type: 'image', src: '../assets/professional-projects/sss/1.jpeg' },
-                { type: 'image', src: '../assets/professional-projects/sss/2.jpeg' },
-                { type: 'image', src: '../assets/professional-projects/sss/3.jpeg' },
-                { type: 'image', src: '../assets/professional-projects/sss/4.jpeg' },
-                { type: 'image', src: '../assets/professional-projects/sss/5.jpeg' }
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/sss/main.png' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/sss/1.jpeg' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/sss/2.jpeg' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/sss/3.jpeg' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/sss/4.jpeg' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/sss/5.jpeg' }
             ]
         },
         {
@@ -152,12 +152,12 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unity 3D", "C#", "Objective-C", "C++", "Cocos2dx", "JavaMe"],
-            image: "../assets/professional-projects/others/main.jpeg",
+            image: "https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/others/main.jpeg",
             mediaItems: [
-                { type: 'image', src: '../assets/professional-projects/others/main.jpeg' },
-                { type: 'image', src: '../assets/professional-projects/others/1.jpeg' },
-                { type: 'image', src: '../assets/professional-projects/others/2.jpeg' },
-                { type: 'image', src: '../assets/professional-projects/others/3.jpeg' }
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/others/main.jpeg' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/others/1.jpeg' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/others/2.jpeg' },
+                { type: 'image', src: 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/professional-projects/others/3.jpeg' }
             ]
         }
     ]
