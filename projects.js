@@ -1,5 +1,5 @@
-import { setupProfessionalProjects } from './professional-projects.js';
-import { setupPersonalProjects } from './personal-projects.js';
+import { setupProfessionalProjects } from './professionalprojects.js';
+import { setupPersonalProjects } from './personalprojects.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     setupProfessionalProjects();

@@ -1,508 +1,508 @@
-.professional-projects-container {
-    display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-        /* Reduced from 2rem to 1rem */
-        padding: 2rem;
+.professionalprojects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  /* Reduced from 2rem to 1rem */
+  padding: 2rem;
 }
 
 /* Existing Project Card Styles */
 /* New Project Card Styles */
 .project-card-new {
-    background: #00ACC1;
-    /* Black background */
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    color: white;
-    max-width: 280px;
-    max-height: 450px;
-    margin: 0 auto;
-    /* Text color */
+  background: #00acc1;
+  /* Black background */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: white;
+  max-width: 280px;
+  max-height: 450px;
+  margin: 0 auto;
+  /* Text color */
 }
 
 .project-card-new:hover {
-    transform: scale(1.05);
-    /* Zoom in slightly on hover */
+  transform: scale(1.05);
+  /* Zoom in slightly on hover */
 }
 
 .project-image-new {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #00ACC1;
-    /* Light background color for empty space */
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00acc1;
+  /* Light background color for empty space */
 }
 
 .project-image-new img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* This preserves aspect ratio */
-    min-height: 80%; /* Ensures image takes up at least 80% of the container height */
-    min-width: 80%; /* Ensures image takes up at least 80% of the container width */    
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* This preserves aspect ratio */
+  min-height: 80%; /* Ensures image takes up at least 80% of the container height */
+  min-width: 80%; /* Ensures image takes up at least 80% of the container width */
+  transition: transform 0.3s ease;
 }
 
 .project-card-new:hover .project-image-new img {
-    transform: scale(1.05);
-    /* Slight zoom on hover */
+  transform: scale(1.05);
+  /* Slight zoom on hover */
 }
 
 .project-content-new {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .project-title-new {
-    font-size: 1.5rem;
-    /* Adjust title size */
-    margin: 0.5rem 0;
-    /* Margin for spacing */
-    color: #fff;
+  font-size: 1.5rem;
+  /* Adjust title size */
+  margin: 0.5rem 0;
+  /* Margin for spacing */
+  color: #fff;
 }
 
 .project-tech-list-new {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
 }
 
 .project-tech-list-new li {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.9rem;
-    color: #fff;
-    background:rgba(56,56,56,1);/* rgba(0, 188, 212, 0.2);*/
-    /* Updated to use the new color with transparency */
-    padding: 0.25rem 0.5rem;
-    border-radius: 3px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+  color: #fff;
+  background: rgba(56, 56, 56, 1); /* rgba(0, 188, 212, 0.2);*/
+  /* Updated to use the new color with transparency */
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
 }
 
 /* Existing Project Content Styles */
 .project-content {
-    grid-column: 1 / 8;
-    grid-row: 1 / -1;
-    position: relative;
-    z-index: 2;
+  grid-column: 1 / 8;
+  grid-row: 1 / -1;
+  position: relative;
+  z-index: 2;
 }
 
 .project-image {
-    grid-column: 8 / -1;
-    grid-row: 1 / -1;
-    position: relative;
-    z-index: 1;
-    max-width: 500px;
+  grid-column: 8 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
 }
 
 .project-image img {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 4px;
-    filter: grayscale(100%) contrast(1.1);
-    transition: filter 0.3s ease;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: grayscale(100%) contrast(1.1);
+  transition: filter 0.3s ease;
 }
 
 /* Existing Modal Styles */
 .project-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
 }
 
 .modal-content {
-    position: relative;
-    background: #fff;
-    margin: 5% auto;
-    padding: 2rem;
-    width: 80%;
-    max-width: 1000px;
-    border-radius: 8px;
-    max-height: 90vh;
-    overflow-y: auto;
+  position: relative;
+  background: #fff;
+  margin: 5% auto;
+  padding: 2rem;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 8px;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .close-modal {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
-    z-index: 1001;
-    width: 30px;
-    height: 30px;
-    background-color: #f1f1f1;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  z-index: 1001;
+  width: 30px;
+  height: 30px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
 }
 
 .close-modal:hover {
-    color: #000;
-    background-color: #ddd;
-    transform: scale(1.1);
+  color: #000;
+  background-color: #ddd;
+  transform: scale(1.1);
 }
 
 /* Existing About Section Styles */
 .about-content {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 50px;
-    padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  padding: 0 20px;
 }
 
 .about-text p {
-    margin-bottom: 15px;
-    color: var(--text-secondary);
+  margin-bottom: 15px;
+  color: var(--text-secondary);
 }
 
 .about-image img {
-    width: 75%;
-    /* Resize to 40% of its original size (60% smaller) */
-    height: auto;
-    /* Maintain aspect ratio */
-    max-width: none;
-    /* Remove any max-width constraints */
-    border-radius: 4px;
-    /* Optional: Add some rounding to the corners */
+  width: 75%;
+  /* Resize to 40% of its original size (60% smaller) */
+  height: auto;
+  /* Maintain aspect ratio */
+  max-width: none;
+  /* Remove any max-width constraints */
+  border-radius: 4px;
+  /* Optional: Add some rounding to the corners */
 }
 
 /* Existing All Projects Page Styles */
 .all-projects-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
 }
 
 .all-projects-page section {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 /* Existing Media Queries */
 @media (max-width: 768px) {
-    .about-content {
-        grid-template-columns: 1fr;
-    }
+  .about-content {
+    grid-template-columns: 1fr;
+  }
 
-    .project-card {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 
-    .project-content,
-    .project-card.project-left .project-content {
-        grid-column: 1 / -1;
-    }
+  .project-content,
+  .project-card.project-left .project-content {
+    grid-column: 1 / -1;
+  }
 
-    .project-image,
-    .project-card.project-left .project-image {
-        grid-column: 1 / -1;
-        max-width: 100%;
-    }
+  .project-image,
+  .project-card.project-left .project-image {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
 
-    .project-image img {
-        max-height: 250px;
-    }
+  .project-image img {
+    max-height: 250px;
+  }
 }
 
 /* Existing Styles for All Projects Button */
 .all-projects-button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 0rem;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
 }
 
 .all-projects-button {
-    display: inline-block;
-    color: #fff;
-    background: var(--accent);
-    /* Use the accent color */
-    border: none;
-    border-radius: 4px;
-    padding: 12px 24px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1rem;
-    text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+  display: inline-block;
+  color: #fff;
+  background: var(--accent);
+  /* Use the accent color */
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .all-projects-button:hover {
-    background: var(--accent-dark);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
+  background: var(--accent-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .all-projects-button:active {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
 }
 
 .all-projects-page .projects-grid {
-    display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-        /* Reduced from 2rem to 1rem */
-        padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  /* Reduced from 2rem to 1rem */
+  padding: 2rem;
 }
 
 .all-projects-page .project-card {
-    background: var(--secondary-dark);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  background: var(--secondary-dark);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .all-projects-page .project-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /* Existing Project Details Modal Styles */
 .project-details-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .details-modal-content {
-    position: relative;
-    background: white;
-    padding: 30px 20px 20px;
-    /* Add more padding at the top for the close button */
-    border-radius: 8px;
-    width: 75%;
-    max-height: 90vh;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 1001;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  background: white;
+  padding: 30px 20px 20px;
+  /* Add more padding at the top for the close button */
+  border-radius: 8px;
+  width: 75%;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1001;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .details-modal-content img {
-    width: 100%; /* Make the image take the full width of the modal */
-    max-width: 600px; /* Set a maximum width for the image */
-    max-height: 75vh; /* Set a maximum height for the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 4px; /* Optional: Add some rounding to the corners */
-    object-fit: contain; /* Ensure the image scales correctly */
+  width: 100%; /* Make the image take the full width of the modal */
+  max-width: 600px; /* Set a maximum width for the image */
+  max-height: 75vh; /* Set a maximum height for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional: Add some rounding to the corners */
+  object-fit: contain; /* Ensure the image scales correctly */
 }
 
 .details-modal-content video {
-    width: 100%; /* Make the video take the full width of the modal */
-    max-width: 600px; /* Set a maximum width for the image */
-    max-height: 75vh; /* Set a maximum height for the video */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 4px; /* Optional: Add some rounding to the corners */
-    object-fit: contain; /* Ensure the video scales correctly */
+  width: 100%; /* Make the video take the full width of the modal */
+  max-width: 600px; /* Set a maximum width for the image */
+  max-height: 75vh; /* Set a maximum height for the video */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional: Add some rounding to the corners */
+  object-fit: contain; /* Ensure the video scales correctly */
 }
 
 /* Updated Carousel Styles */
 .media-section {
-    position: relative;
-    max-height: 75vh;
-    overflow: visible;
+  position: relative;
+  max-height: 75vh;
+  overflow: visible;
 }
 
 .carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .carousel-inner {
-    display: flex;
-    transition: transform 0.3s ease;
-    width: 100%;
-    cursor: grab;
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+  cursor: grab;
 }
 
 .carousel-item {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    opacity: 0.5;
-    transform: scale(0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Add height to ensure proper vertical centering */
-    height: 65vh;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0.5;
+  transform: scale(0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add height to ensure proper vertical centering */
+  height: 65vh;
 }
 
 .carousel-item.active {
-    opacity: 1;
-    transform: scale(1);
-    z-index: 2;
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
 }
 
 .carousel-item img,
 .carousel-item video {
-    max-width: 100%;
-    max-height: 65vh;
-    object-fit: contain;
-    border-radius: 4px;
-    /* Ensure the media is fully visible */
-    margin: auto;
+  max-width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+  border-radius: 4px;
+  /* Ensure the media is fully visible */
+  margin: auto;
 }
 
 /* Carousel Controls */
 .carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    cursor: pointer;
-    z-index: 10;
-    transition: background-color 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-control.prev {
-    left: 15px;
+  left: 15px;
 }
 
 .carousel-control.next {
-    right: 15px;
+  right: 15px;
 }
 
 /* Carousel Indicators */
 .carousel-indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    gap: 8px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 8px;
 }
 
 .indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #bbb;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .indicator.active {
-    background-color: #333;
+  background-color: #333;
 }
 
 /* For mobile screens */
 @media (max-width: 768px) {
-    .carousel-control {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
-    
-    .details-modal-content {
-        width: 90%;
-        padding: 15px;
-    }
-    
-    .indicator {
-        width: 8px;
-        height: 8px;
-    }
+  .carousel-control {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .details-modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .github-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background-color: #333;
-    /* GitHub color */
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #333;
+  /* GitHub color */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 .github-link:hover {
-    background-color: #555;
-    /* Darker shade on hover */
+  background-color: #555;
+  /* Darker shade on hover */
 }
 
 .contact-page {
-    padding: 50px;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: var(--secondary-dark);
-    border-radius: 8px;
-    color: var(--text-primary);
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--secondary-dark);
+  border-radius: 8px;
+  color: var(--text-primary);
 }
 
 .contact-page h2 {
-    margin-bottom: 20px;
-    color: var(--text-primary); /* Ensure heading color matches */
+  margin-bottom: 20px;
+  color: var(--text-primary); /* Ensure heading color matches */
 }
 
 .contact-page label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--text-primary);
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-primary);
 }
 
 .contact-page input,
 .contact-page textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .contact-page button {
-    background-color: var(--accent);
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .contact-page button:hover {
-    background-color: #5cd1a0;
-    /* Darker shade on hover */
+  background-color: #5cd1a0;
+  /* Darker shade on hover */
 }
 
 /* For dark theme support */
@@ -524,40 +524,40 @@
 
 /* Improved List Styling in Modal Content */
 .description-section ul {
-    padding-left: 25px;
-    margin: 10px 0;
-    list-style-type: disc;
+  padding-left: 25px;
+  margin: 10px 0;
+  list-style-type: disc;
 }
 
 .description-section ul li {
-    margin-bottom: 8px;
-    position: relative;
-    line-height: 1.5;
+  margin-bottom: 8px;
+  position: relative;
+  line-height: 1.5;
 }
 
 /* Styling for nested lists */
 .description-section ul ul,
 .description-section ul ol {
-    margin-top: 8px;
-    padding-left: 20px;
-    list-style-type: circle;
+  margin-top: 8px;
+  padding-left: 20px;
+  list-style-type: circle;
 }
 
 /* Ensure list bullets are visible */
 .description-section ul li::marker {
-    color: black;/*var(--accent, #00BCD4);*/
+  color: black; /*var(--accent, #00BCD4);*/
 }
 
 /* Add proper spacing for paragraphs inside description */
 .description-section p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* Make sure the description text has good readability */
 .description-section {
-    color: #333;
-    font-size: 15px;
-    line-height: 1.6;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 /* Dark mode support */

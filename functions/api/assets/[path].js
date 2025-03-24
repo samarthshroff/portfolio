@@ -1,7 +1,7 @@
 export async function onRequest({ params, env }) {
   try {
     console.log("Function invoked for route: /api/assets/" + params.path);
-    const key = `assets/${params.path}`; // e.g., assets/professional-projects/wopp/main.png
+    const key = `assets/${params.path}`; // e.g., assets/professionalprojects/wopp/main.png
     console.log(`Requested path: ${params.path}`);
     console.log(`Fetching R2 key: ${key}`);
     

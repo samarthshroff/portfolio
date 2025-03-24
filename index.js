@@ -4,9 +4,9 @@
 // import './styles/portfolio.css';
 //import { initializeNavigation } from './navigation';
 import { setupAboutPage } from './about.js';
-import { setupProfessionalProjects } from './featured-projects.js';
-//import { setupProfessionalProjects } from './projects/professional-projects.js';
-//import { setupPersonalProjects } from './projects/personal-projects.js';
+import { setupProfessionalProjects } from './featuredprojects.js';
+//import { setupProfessionalProjects } from './projects/professionalprojects.js';
+//import { setupPersonalProjects } from './projects/personalprojects.js';
 //import { setupResumePage } from '/pages/resume';
 //import { setupContactForm } from '/pages/contact';
 

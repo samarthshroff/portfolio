@@ -24,11 +24,11 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 4.27", "C++", "Blueprints"],
-            image: `${assetUrl}/personal-projects/fbue4/splash.jpg`,
+            image: `${assetUrl}/personalprojects/fbue4/splash.jpg`,
             githubLink: "https://github.com/samarthshroff/FlockingBehaviorUnreal", // Add GitHub link here
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/personal-projects/fbue4/splash.jpg` },
-                { type: 'video', src: `${assetUrl}/personal-projects/fbue4/vid` }
+                { type: 'image', src: `${assetUrl}/personalprojects/fbue4/splash.jpg` },
+                { type: 'video', src: `${assetUrl}/personalprojects/fbue4/vid` }
             ]
         },
         {
@@ -48,11 +48,11 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Python", "PyGame"],
-            image: `${assetUrl}/personal-projects/fc/splash.png`,
+            image: `${assetUrl}/personalprojects/fc/splash.png`,
             githubLink: "https://github.com/samarthshroff/FreeCell",
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/personal-projects/fc/splash.png` },
-                { type: 'video', src: `${assetUrl}/personal-projects/fc/vid` }
+                { type: 'image', src: `${assetUrl}/personalprojects/fc/splash.png` },
+                { type: 'video', src: `${assetUrl}/personalprojects/fc/vid` }
             ]
         },
         {
@@ -86,13 +86,13 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
-            image: `${assetUrl}/personal-projects/tps/splash.jpg`,
+            image: `${assetUrl}/personalprojects/tps/splash.jpg`,
             githubLink: "https://github.com/samarthshroff/ThirdPersonShooter",
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/personal-projects/tps/splash.jpg` },
-                { type: 'image', src: `${assetUrl}/personal-projects/tps/1.png` },
-                { type: 'video', src: `${assetUrl}/personal-projects/tps/vid` },
-                { type: 'video', src: `${assetUrl}/personal-projects/tps/vid1` }
+                { type: 'image', src: `${assetUrl}/personalprojects/tps/splash.jpg` },
+                { type: 'image', src: `${assetUrl}/personalprojects/tps/1.png` },
+                { type: 'video', src: `${assetUrl}/personalprojects/tps/vid` },
+                { type: 'video', src: `${assetUrl}/personalprojects/tps/vid1` }
             ]
         },
         {
@@ -116,12 +116,12 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
-            image: `${assetUrl}/personal-projects/vsc/splash.png`,
+            image: `${assetUrl}/personalprojects/vsc/splash.png`,
             githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/personal-projects/vsc/splash.png` },
-                { type: 'image', src: `${assetUrl}/personal-projects/vsc/1.png` },
-                { type: 'video', src: `${assetUrl}/personal-projects/vsc/vid` }
+                { type: 'image', src: `${assetUrl}/personalprojects/vsc/splash.png` },
+                { type: 'image', src: `${assetUrl}/personalprojects/vsc/1.png` },
+                { type: 'video', src: `${assetUrl}/personalprojects/vsc/vid` }
             ]
         }
     ]
@@ -148,7 +148,7 @@ export const setupPersonalProjects = () => {
         return card;
     };
 
-    const projectsContainer = document.querySelector('.personal-projects .projects-grid');
+    const projectsContainer = document.querySelector('.personalprojects .projects-grid');
     if (!projectsContainer) return;
 
     // Loop through the projects array
@@ -277,6 +277,6 @@ window.openPersonalProjectModal = (title, description, mediaItems, githubLink) =
     carouselInner.addEventListener('touchend', window.finishDrag);
 };
 
-// Note: The following functions are shared with professional-projects.js
+// Note: The following functions are shared with professionalprojects.js
 // and are already defined in the global scope:
 // moveCarousel, jumpToSlide, initCarousel, closeModal, finishDrag
