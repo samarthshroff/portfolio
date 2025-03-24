@@ -1,16 +1,15 @@
 export async function onRequest({ params, env }) {
-  // Capture the full path after /api/assets/
   const key = `assets/${params.path}`;
-    console.log(`The key is ${key}`);
-
+  console.log(`Fetching R2 key: ${key}`);
   const object = await env.MY_BUCKET.get(key);
   if (!object) {
+    console.log(`Object not found for key: ${key}`);
     return new Response(`Asset "${key}" not found`, { status: 404 });
   }
-
+  console.log(`Content-Type: ${object.httpMetadata.contentType}`);
   const headers = new Headers();
   headers.set("Content-Type", object.httpMetadata.contentType || "application/octet-stream");
-  headers.set("Cache-Control", "max-age=31536000"); // Optional: cache for 1 year
-
+  headers.set("Cache-Control", "max-age=31536000");
+  headers.set("Access-Control-Allow-Origin", "www.samarthshroff.com");
   return new Response(object.body, { headers });
 }
