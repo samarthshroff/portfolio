@@ -1,4 +1,5 @@
-const assetUrl = '/api/assets/assets' || '';
+const assetUrl = '/api/assets' || '';
+
 export const projectsContent = {
     projects: [
         {
