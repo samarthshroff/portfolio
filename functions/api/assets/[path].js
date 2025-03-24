@@ -1,7 +1,8 @@
 export async function onRequest({ params, env }) {
   // Capture the full path after /api/assets/
   const key = `assets/${params.path}`;
-  
+    console.log(`The key is ${key}`);
+
   const object = await env.MY_BUCKET.get(key);
   if (!object) {
     return new Response(`Asset "${key}" not found`, { status: 404 });
