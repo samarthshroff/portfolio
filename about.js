@@ -1,7 +1,8 @@
+const assetUrl = process.env.ASSET_BASE_URL || '';
 export const aboutContent = {
     title: "About Me",
     mainImage: {
-        src: "assets/profile-image.jpg", // Update with your image path
+        src: `${assetUrl}/profile-image.jpg`, // Update with your image path
         alt: "Samarth Shroff"
     },
     paragraphs: [

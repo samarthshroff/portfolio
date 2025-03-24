@@ -1,24 +1,25 @@
+const assetUrl = process.env.ASSET_BASE_URL || '';
 export const projectsContent = {
     projects: [
         {
             title: "Project Name 1",
             description: "A $10M in annual revenue and reaching 2M monthly active users (MAU) game.",
             technologies: ["Unity |", "C# |", "RevenueCat |", "Firebase |", "Unity Gaming Services |", "Cognito"],
-            image: "assets/professional-projects/wopp/main.png",
+            image: `${assetUrl}/professional-projects/wopp/main.png`,
             featured: true
         },
         {
             title: "Cricket Premier League",
             description: "Played a pivotal role in the development of a mobile cricket game that allows players to compete in a premier league, build their dream team, and challenge friends and family on the leaderboard.",
             technologies: ["C++ |", "Cocos2dx"],
-            image: "assets/professional-projects/cpl/main.png",
+            image: `${assetUrl}/professional-projects/cpl/main.png`,
             featured: true
         },
         {
             title: "Nazara Cricket",
             description: "I was a key player in enhancing the gameplay experience of Nazara Cricket, a mobile cricket game featuring detailed player characters, huge collection of typical shots of individual players and real-time multiplayer. ",
             technologies: ["C++ |", "Cocos2dx"],
-            image: "assets/professional-projects/nc/main.png",
+            image: `${assetUrl}/professional-projects/nc/main.png`,
             featured: true
         }
     ]
