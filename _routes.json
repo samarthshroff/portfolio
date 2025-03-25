@@ -1,0 +1,4 @@
+{
+  "include": ["/r2/professionalprojects/*", "/r2/personalprojects/*", "/r2/*"],
+  "exclude": []
+}
