@@ -58,7 +58,7 @@ export const setupProfessionalProjects = () => {
     // Add "All Projects" button with the same style as CTA button, without the arrow
     projectsContainer.insertAdjacentHTML('afterend', `
         <div class="all-projects-button-container">
-            <a href="projects.html" class="cta-button">All Projects</a>
+            <a href="/projects.html" class="cta-button">All Projects</a>
         </div>
     `);
 };
