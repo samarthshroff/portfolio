@@ -15,18 +15,18 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unity", "C#", "RevenueCat", "Firebase", "Unity Gaming Services", "Cognito"],
-            image: `${assetUrl}/professionalprojects/wopp/main.png`,
+            image: `${assetUrl}/professionalprojects-wopp-main.png`,
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/professionalprojects/wopp/main.png` },
-                { type: 'video', src: `${assetUrl}/professionalprojects/wopp/vid1` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/wopp/1.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/wopp/2.png` },
-                { type: 'video', src: `${assetUrl}/professionalprojects/wopp/vid2` },
-                { type: 'video', src: `${assetUrl}/professionalprojects/wopp/vid3` },                
-                { type: 'image', src: `${assetUrl}/professionalprojects/wopp/3.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/wopp/4.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/wopp/5.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/wopp/6.png` }
+                { type: 'image', src: `${assetUrl}/professionalprojects-wopp-main.png` },
+                { type: 'video', src: `${assetUrl}/professionalprojects-wopp-vid1` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-wopp-1.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-wopp-2.png` },
+                { type: 'video', src: `${assetUrl}/professionalprojects-wopp-vid2` },
+                { type: 'video', src: `${assetUrl}/professionalprojects-wopp-vid3` },                
+                { type: 'image', src: `${assetUrl}/professionalprojects-wopp-3.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-wopp-4.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-wopp-5.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-wopp-6.png` }
             ]
         },
         {
@@ -39,13 +39,13 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["C++", "Cocos2dx"],
-            image: `${assetUrl}/professionalprojects/cpl/main.png`,
+            image: `${assetUrl}/professionalprojects-cpl-main.png`,
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/professionalprojects/cpl/main.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/cpl/2.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/cpl/3.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/cpl/4.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/cpl/5.png` }
+                { type: 'image', src: `${assetUrl}/professionalprojects-cpl-main.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-cpl-2.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-cpl-3.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-cpl-4.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-cpl-5.png` }
             ]
         },
         {
@@ -59,13 +59,13 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["C++", "Cocos2dx"],
-            image: `${assetUrl}/professionalprojects/nc/main.png`,
+            image: `${assetUrl}/professionalprojects-nc-main.png`,
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/professionalprojects/nc/main.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/nc/2.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/nc/3.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/nc/4.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/nc/5.png` }
+                { type: 'image', src: `${assetUrl}/professionalprojects-nc-main.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-nc-2.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-nc-3.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-nc-4.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-nc-5.png` }
             ]
         },
         {
@@ -80,14 +80,14 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["C++", "Cocos2dx"],
-            image: `${assetUrl}/professionalprojects/salem/main.png`,
+            image: `${assetUrl}/professionalprojects-salem-main.png`,
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/professionalprojects/salem/main.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/salem/1.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/salem/2.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/salem/3.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/salem/4.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/salem/5.png` }
+                { type: 'image', src: `${assetUrl}/professionalprojects-salem-main.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-salem-1.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-salem-2.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-salem-3.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-salem-4.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-salem-5.png` }
             ]
         },
         {
@@ -103,14 +103,14 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["C++", "Cocos2dx"],
-            image: `${assetUrl}/professionalprojects/eob/main.png`,
+            image: `${assetUrl}/professionalprojects-eob-main.png`,
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/professionalprojects/eob/main.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/eob/1.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/eob/2.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/eob/3.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/eob/4.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/eob/5.png` }
+                { type: 'image', src: `${assetUrl}/professionalprojects-eob-main.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-eob-1.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-eob-2.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-eob-3.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-eob-4.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-eob-5.png` }
             ]
         },
         {
@@ -124,14 +124,14 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["Objective-C"],
-            image: `${assetUrl}/professionalprojects/sss/main.png`,
+            image: `${assetUrl}/professionalprojects-sss-main.png`,
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/professionalprojects/sss/main.png` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/sss/1.jpeg` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/sss/2.jpeg` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/sss/3.jpeg` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/sss/4.jpeg` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/sss/5.jpeg` }
+                { type: 'image', src: `${assetUrl}/professionalprojects-sss-main.png` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-sss-1.jpeg` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-sss-2.jpeg` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-sss-3.jpeg` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-sss-4.jpeg` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-sss-5.jpeg` }
             ]
         },
         {
@@ -153,12 +153,12 @@ export const professionalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unity 3D", "C#", "Objective-C", "C++", "Cocos2dx", "JavaMe"],
-            image: `${assetUrl}/professionalprojects/others/main.jpeg`,
+            image: `${assetUrl}/professionalprojects-others-main.jpeg`,
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/professionalprojects/others/main.jpeg` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/others/1.jpeg` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/others/2.jpeg` },
-                { type: 'image', src: `${assetUrl}/professionalprojects/others/3.jpeg` }
+                { type: 'image', src: `${assetUrl}/professionalprojects-others-main.jpeg` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-others-1.jpeg` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-others-2.jpeg` },
+                { type: 'image', src: `${assetUrl}/professionalprojects-others-3.jpeg` }
             ]
         }
     ]

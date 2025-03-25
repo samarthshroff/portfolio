@@ -23,11 +23,11 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 4.27", "C++", "Blueprints"],
-            image: `${assetUrl}/personalprojects/fbue4/splash.jpg`,
+            image: `${assetUrl}/personalprojects-fbue4-splash.jpg`,
             githubLink: "https://github.com/samarthshroff/FlockingBehaviorUnreal", // Add GitHub link here
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/personalprojects/fbue4/splash.jpg` },
-                { type: 'video', src: `${assetUrl}/personalprojects/fbue4/vid` }
+                { type: 'image', src: `${assetUrl}/personalprojects-fbue4-splash.jpg` },
+                { type: 'video', src: `${assetUrl}/personalprojects-fbue4-vid` }
             ]
         },
         {
@@ -47,11 +47,11 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Python", "PyGame"],
-            image: `${assetUrl}/personalprojects/fc/splash.png`,
+            image: `${assetUrl}/personalprojects-fc-splash.png`,
             githubLink: "https://github.com/samarthshroff/FreeCell",
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/personalprojects/fc/splash.png` },
-                { type: 'video', src: `${assetUrl}/personalprojects/fc/vid` }
+                { type: 'image', src: `${assetUrl}/personalprojects-fc-splash.png` },
+                { type: 'video', src: `${assetUrl}/personalprojects-fc-vid` }
             ]
         },
         {
@@ -85,13 +85,13 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
-            image: `${assetUrl}/personalprojects/tps/splash.jpg`,
+            image: `${assetUrl}/personalprojects-tps-splash.jpg`,
             githubLink: "https://github.com/samarthshroff/ThirdPersonShooter",
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/personalprojects/tps/splash.jpg` },
-                { type: 'image', src: `${assetUrl}/personalprojects/tps/1.png` },
-                { type: 'video', src: `${assetUrl}/personalprojects/tps/vid` },
-                { type: 'video', src: `${assetUrl}/personalprojects/tps/vid1` }
+                { type: 'image', src: `${assetUrl}/personalprojects-tps-splash.jpg` },
+                { type: 'image', src: `${assetUrl}/personalprojects-tps-1.png` },
+                { type: 'video', src: `${assetUrl}/personalprojects-tps-vid` },
+                { type: 'video', src: `${assetUrl}/personalprojects-tps-vid1` }
             ]
         },
         {
@@ -115,12 +115,12 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
-            image: `${assetUrl}/personalprojects/vsc/splash.png`,
+            image: `${assetUrl}/personalprojects-vsc-splash.png`,
             githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/personalprojects/vsc/splash.png` },
-                { type: 'image', src: `${assetUrl}/personalprojects/vsc/1.png` },
-                { type: 'video', src: `${assetUrl}/personalprojects/vsc/vid` }
+                { type: 'image', src: `${assetUrl}/personalprojects-vsc-splash.png` },
+                { type: 'image', src: `${assetUrl}/personalprojects-vsc-1.png` },
+                { type: 'video', src: `${assetUrl}/personalprojects-vsc-vid` }
             ]
         }
     ]
