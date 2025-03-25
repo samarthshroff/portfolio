@@ -1,8 +1,10 @@
 export async function onRequest({ params, env }) {
   try {
-    console.log("Function invoked for route: /api/assets/" + params.path);
-    const key = `assets/${params.path}`; // e.g., assets/professionalprojects/wopp/main.png
-    console.log(`Requested path: ${params.path}`);
+    console.log("Function invoked for route: /r2/" + params.path);
+    console.log(`Raw params.path: "${params.path}"`);
+    const decodedPath = decodeURIComponent(params.path);
+    const key = `assets/${decodedPath}`;
+    console.log(`Requested path: ${decodedPath}`);
     console.log(`Fetching R2 key: ${key}`);
     
     const object = await env.MY_BUCKET.get(key);

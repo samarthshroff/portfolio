@@ -1,5 +1,4 @@
-const assetUrl = 'https://f795e6b29ec702cad65e61b7d53e6234.r2.cloudflarestorage.com/assets/assets' || '';
-
+const assetUrl = '/r2' || '';
 export const personalProjectsContent = {
     projects: [
         {
