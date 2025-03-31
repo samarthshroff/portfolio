@@ -1,4 +1,5 @@
 const assetUrl = '/r2' || '';
+//const assetUrl = './static-assets';
 export const professionalProjectsContent = {
     projects: [
         {
@@ -164,22 +165,58 @@ export const professionalProjectsContent = {
     ]
 };
 
+const techColors = {
+    // Game Development - Blue shades
+    "Unity": "#E1F0FF",
+    "Unity Gaming Services": "#E1F0FF",
+    "Unreal": "#E1F0FF",
+    "Blueprints": "#E1F0FF",
+    
+    // Programming Languages - Pink/Red shades
+    "C#": "#FFE1E8",
+    "C++": "#FFE1E8",
+    "Python": "#FFE1E8",
+    "Objective-C": "#FFE1E8",
+    
+    // Services & SDKs - Green shades
+    "RevenueCat": "#E8F5E9",
+    "Firebase": "#E8F5E9",
+    "Cognito": "#E8F5E9",
+    
+    // Frameworks - Purple shades
+    "Cocos2dx": "#F3E5F5",
+    
+    // Default color for any unlisted technology
+    "default": "#F5F5F5"
+};
+
 export const setupProfessionalProjects = () => {
     const createProjectCard = (project) => {
         const card = document.createElement('div');
         card.classList.add('project-card-new'); // Use the new class
 
-        card.innerHTML = `
-            <div class="project-image-new">
-                <img src="${project.image}" alt="${project.title}" />
+    card.innerHTML = `
+        <div class="project-image-new">
+            <img src="${project.image}" alt="${project.title}" />
+        </div>
+        <div class="project-content-new">
+            <h3 class="project-title-new">${project.title}</h3>
+            <div class="project-tech-list-new">
+                ${project.technologies.map(tech => {
+                    const bgColor = techColors[tech] || '#f0f0f0';
+                    return `<span style="
+                        background-color: ${bgColor}; 
+                        color: #333;
+                        padding: 4px 12px;
+                        border-radius: 20px;
+                        font-size: 0.85rem;
+                        display: inline-block;
+                        margin: 2px;
+                    ">${tech}</span>`;
+                }).join('')}
             </div>
-            <div class="project-content-new">
-                <h3 class="project-title-new">${project.title}</h3>
-                <ul class="project-tech-list-new">
-                    ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
-                </ul>
-            </div>
-        `;
+        </div>
+    `;
         
         card.onclick = () => openModal(project.title, project.description, project.mediaItems);
         return card;

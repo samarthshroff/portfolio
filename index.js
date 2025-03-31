@@ -21,7 +21,23 @@ import { setupProfessionalProjects } from './featuredprojects.js';
 //import { initializeSEO } from './seo/meta';
 //import { generateSitemap } from './seo/sitemap';
 
+const assetUrl = '/r2' || '';
+//const assetUrl = './static-assets';
+// Add this function
+function setupHeroBackground() {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+        const backgroundUrl = `${assetUrl}/welcome-bg.jpg`;
+        heroSection.style.setProperty('--bg-image', `url(${backgroundUrl})`);
+    }
+}
 
+// Add this to your initialization code
+document.addEventListener('DOMContentLoaded', () => {
+    // ... existing initialization code ...
+    setupHeroBackground();
+    // ... existing initialization code ...
+});
 
 console.log('index.js loaded'); // Debug message
 

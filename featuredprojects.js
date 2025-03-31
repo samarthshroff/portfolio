@@ -1,8 +1,36 @@
 const assetUrl = '/r2' || '';
+//const assetUrl = './static-assets';
+
+// Add the techColors object for consistent styling
+const techColors = {
+    // Game Development - Blue shades
+    "Unity": "#E1F0FF",
+    "Unity Gaming Services": "#E1F0FF",
+    "Unreal": "#E1F0FF",
+    "Blueprints": "#E1F0FF",
+    
+    // Programming Languages - Pink/Red shades
+    "C#": "#FFE1E8",
+    "C++": "#FFE1E8",
+    "Python": "#FFE1E8",
+    "Objective-C": "#FFE1E8",
+    
+    // Services & SDKs - Green shades
+    "RevenueCat": "#E8F5E9",
+    "Firebase": "#E8F5E9",
+    "Cognito": "#E8F5E9",
+    
+    // Frameworks - Purple shades
+    "Cocos2dx": "#F3E5F5",
+    
+    // Default color for any unlisted technology
+    "default": "#F5F5F5"
+};
+
 export const projectsContent = {
     projects: [
         {
-            title: "Project Name 1",
+            title: "World of Peppa Pig",
             description: "A $10M in annual revenue and reaching 2M monthly active users (MAU) game.",
             technologies: ["Unity |", "C# |", "RevenueCat |", "Firebase |", "Unity Gaming Services |", "Cognito"],
             image: `${assetUrl}/professionalprojects-wopp-main.png`,
@@ -32,14 +60,24 @@ export const setupProfessionalProjects = () => {
         return `
             <div class="featured-project-card">
                 <div class="project-content" style="${isEven ? '' : 'order: 2;'}">
-                    <p class="project-overline">Featured Project</p>
                     <h3 class="project-title">${project.title}</h3>
                     <div class="project-description">
                         <p>${project.description}</p>
                     </div>
-                    <ul class="project-tech-list">
-                        ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
-                    </ul>
+                    <div class="project-tech-list">
+                        ${project.technologies.map(tech => {
+                            const bgColor = techColors[tech] || techColors.default;
+                            return `<span style="
+                                background-color: ${bgColor}; 
+                                color: #333;
+                                padding: 4px 12px;
+                                border-radius: 20px;
+                                font-size: 0.85rem;
+                                display: inline-block;
+                                margin: 2px;
+                            ">${tech}</span>`;
+                        }).join('')}
+                    </div>
                 </div>
                 <div class="featured-project-image" style="${isEven ? 'order: 2;' : ''}">
                     <img src="${project.image}" alt="${project.title}">

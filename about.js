@@ -1,4 +1,5 @@
 const assetUrl = '/r2' || '';
+//const assetUrl = './static-assets';
 export const aboutContent = {
     title: "About Me",
     mainImage: {
@@ -15,8 +16,32 @@ export const aboutContent = {
         "C++",
         "Python"        
     ],
-    footerBio: "Game Developer passionate about creating immersive experiences."
+    footerBio: "Game Developer passionate about creating immersive experiences.",
+    certifications: [
+        {
+            title: "Unity Certified",
+            subtitle: "Unity Certified Professional: Programmer.",
+            date: "Est. June 2024",
+            image: `${assetUrl}/unity-badge.png`,
+            url:"https://www.credly.com/badges/e9576501-9901-4b00-9f3b-15a25c2c07d8/public_url"
+        },
+        {
+            title: "Game Production",
+            subtitle: "Game Production course taught by Andy Johnson and delivered through ELVTR.",
+            date: "Est. October 2021",
+            image: `${assetUrl}/elvtr-badge.png`,
+            url:"https://elvtr.com/certificate/7bd54fab271ad7d7a68eafed038692ef/"
+        },
+        {
+            title: "Certified Java Programmer",
+            subtitle: "Sun Certified Programmer for Java 2 Platform",
+            date: "Est. October 2009",
+            image: `${assetUrl}/java-badge.png`,
+            url: null
+        }
+    ]
 };
+
 
 export const setupAboutPage = () => {
     console.log('Setting up about page'); // Debug message
@@ -44,6 +69,25 @@ export const setupAboutPage = () => {
                 <div class="wrapper">
                     <img src="${aboutContent.mainImage.src}" alt="${aboutContent.mainImage.alt}">
                 </div>
+            </div>
+        </div>
+        <div class="certifications-section">
+            <h2 class="section-title">Certificates & Courses</h2>
+            <div class="certifications-grid">
+                ${aboutContent.certifications.map(cert => `
+                    ${cert.url ? `<a href="${cert.url}" target="_blank" rel="noopener noreferrer" class="certification-link">` : '<div>'}
+                        <div class="certification-card">
+                            <div class="certification-image">
+                                <img src="${cert.image}" alt="${cert.title}">
+                            </div>
+                            <div class="certification-content">
+                                <h3>${cert.title}</h3>
+                                <p class="certification-subtitle">${cert.subtitle}</p>
+                                <p class="certification-date">${cert.date}</p>
+                            </div>
+                        </div>
+                    ${cert.url ? '</a>' : '</div>'}
+                `).join('')}
             </div>
         </div>
     `;

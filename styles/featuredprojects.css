@@ -25,6 +25,7 @@
     z-index: 1;
     max-width: 500px;
     overflow: hidden;
+    border-radius: 20px;
     /* Added to contain the image zoom effect */
 }
 
@@ -34,15 +35,15 @@
     max-height: 300px;
     object-fit: contain;
     /* Changed from cover to contain to match main.css */
-    border-radius: 4px;
-    filter: grayscale(100%) contrast(1.1);
-    transition: filter 0.3s ease, transform 0.3s ease;
+    border-radius: 20px;
+    /*filter: grayscale(100%) contrast(1.1);*/
+    transition: transform 0.3s ease;/*filter 0.3s ease,*/
     /* Added transform transition */
 }
 
 .featured-project-card .featured-project-image img:hover {
-    filter: grayscale(0%) contrast(1);
-    transform: scale(1.05);
+    /*filter: grayscale(0%) contrast(1);*/
+    transform: scale(1.05);    
     /* Added image zoom on hover to match main.css */
 }
 
@@ -54,17 +55,31 @@
 }
 
 .featured-project-card .project-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
+    color: #2d3436;    /* Dark gray for titles */
 }
 
 .featured-project-card .project-description {
-    background-color: var(--secondary-dark);
+    background-color: white;    /* Changed from var(--secondary-dark) to white */
     padding: 1.5rem;
-    border-radius: 4px;
+    border-radius: 8px;    /* Increased from 4px to 8px to match personal projects */
     margin-bottom: 1rem;
     position: relative;
     z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);    /* Added shadow to match personal projects */
+    color: #333;    /* Added darker text color for better contrast on white */
+}
+
+.featured-project-card .project-description p {
+    color: #636e72;
+    /* Medium gray for description text */
+    line-height: 1.6;
+}
+
+.featured-project-card .project-tech-list span {
+    color: #2d3436;
+    /* Dark gray for tech stack text */
 }
 
 /* Updated tech list styling to match main.css */
@@ -79,11 +94,24 @@
 .featured-project-card .project-tech-list li {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
-    color: #fff;
-    background: rgba(0, 188, 212, 0.2);
-    /* Added background color from main.css */
+    color: #333;
+    /* Changed from #fff to #333 */
+    background: #f0f0f0;
+    /* Changed from rgba(0, 188, 212, 0.2) to solid light gray */
     padding: 0.25rem 0.5rem;
-    border-radius: 3px;
+    border-radius: 20px;
+    /* Increased from 3px to 20px to match personal projects */
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    letter-spacing: -1px;
+    /* Add this to reduce space between characters */
 }
 
 /* Mobile responsiveness */
