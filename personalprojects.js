@@ -3,6 +3,36 @@ const assetUrl = '/r2' || '';
 export const personalProjectsContent = {
     projects: [
         {
+            title: "Vampire Survivor Clone Prototype",
+            description: `
+                <p>A prototype clone of the famous Vampire Survivor game using C++. This demonstrates:</p>
+                <ul>
+                    <li>Character animations: Idle, BlendSpace for Walk and Run based on speed.</li>
+                    <li>Using <strong>Prototype design pattern</strong> for spawning Enemies.</li>
+                    <li><strong>Data-Driven</strong> Enemies information with the use of <strong>Data tables</strong>.</li>
+                    <li>Using <strong>Behavior Tree</strong> for enemies (looking at, chasing and attacking player).</li>
+                    <li>Use of <strong>Gameplay ability system</strong> for possession of weapons and abilities by player and enemies' weapons.</li>
+                    <li>Editor Tool in Python for recreating DataTable from csv files found in a predefined directory during each editor launch as there is a known issue in UE5 that corrupts the data tables.</li>
+                    <li>Camera Follows the character.</li> 
+                    <li>Using Enhanced Input System for moving player to the position of mouse clicks.</li>
+                    <li>Character and Animation imported from Mixamo.</li>                    
+                </ul>
+                <p>To-do:</p>
+                <ul>                    
+                    <li>Advanced AI Logic using Behavior Tree for Enemies.</li>
+                    <li>Niagara Effects, Health and UI widgets.</li>
+                </ul>
+            `,
+            technologies: ["Unreal 5.5", "C++", "Python"],
+            image: `${assetUrl}/personalprojects-vsc-splash.png`,
+            githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
+            mediaItems: [
+                { type: 'image', src: `${assetUrl}/personalprojects-vsc-splash.png` },
+                { type: 'image', src: `${assetUrl}/personalprojects-vsc-1.png` },
+                { type: 'video', src: `${assetUrl}/personalprojects-vsc-vid` }
+            ]
+        },
+        {
             title: "Boid Simulation",
             description:`
                 <p>A real time simulation of flocking behavior, using the Boids algorithm. At present it demonstrates forward collision detection with world statics. This project demonstrates:</p>
@@ -93,37 +123,6 @@ export const personalProjectsContent = {
                 { type: 'image', src: `${assetUrl}/personalprojects-tps-1.png` },
                 { type: 'video', src: `${assetUrl}/personalprojects-tps-vid` },
                 { type: 'video', src: `${assetUrl}/personalprojects-tps-vid1` }
-            ]
-        },
-        {
-            title: "Vampire Survivor Clone Prototype",
-            description: `
-                <p>A prototype clone of the famous Vampire Survivor game using C++. This demonstrates:</p>
-                <ul>
-                    <li>Character animations: Idle, BlendSpace for Walk and Run based on speed.</li>
-                    <li>Using <strong>Prototype design pattern</strong> for spawning Enemies.</li>
-                    <li>Using Data table to store Enemies and their information per level for making the Enemy system data driven.</li>
-                    <li>Implemented enemies turning towards the player and chasing him using Behavior Tree.</li>    
-                    <li>Editor Tool in Python for recreating DataTable from csv files found in a predefined directory during each editor launch as there is a known issue in UE5 that corrupts the data tables.</li>
-                    <li>Camera Follows the character.</li> 
-                    <li>Using Enhanced Input System for moving player to the position of mouse clicks.</li>
-                    <li>Character and Animation imported from Mixamo.</li>
-                    
-                </ul>
-                <p>To-do:</p>
-                <ul>                    
-                    <li>Using Gameplay ability system for player and enemies.</li>                    
-                    <li>Advanced AI Logic using Behavior Tree for Enemies.</li>
-                    <li>Niagara Effects, Health and UI widgets.</li>
-                </ul>
-            `,
-            technologies: ["Unreal 5.5", "C++", "Python"],
-            image: `${assetUrl}/personalprojects-vsc-splash.png`,
-            githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
-            mediaItems: [
-                { type: 'image', src: `${assetUrl}/personalprojects-vsc-splash.png` },
-                { type: 'image', src: `${assetUrl}/personalprojects-vsc-1.png` },
-                { type: 'video', src: `${assetUrl}/personalprojects-vsc-vid` }
             ]
         }
     ]

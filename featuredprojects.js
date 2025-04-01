@@ -32,21 +32,21 @@ export const projectsContent = {
         {
             title: "World of Peppa Pig",
             description: "A $10M in annual revenue and reaching 2M monthly active users (MAU) game.",
-            technologies: ["Unity |", "C# |", "RevenueCat |", "Firebase |", "Unity Gaming Services |", "Cognito"],
+            technologies: ["Unity ", "C# ", "RevenueCat ", "Firebase ", "Unity Gaming Services ", "Cognito"],
             image: `${assetUrl}/professionalprojects-wopp-main.png`,
             featured: true
         },
         {
             title: "Cricket Premier League",
             description: "Played a pivotal role in the development of a mobile cricket game that allows players to compete in a premier league, build their dream team, and challenge friends and family on the leaderboard.",
-            technologies: ["C++ |", "Cocos2dx"],
+            technologies: ["C++ ", "Cocos2dx"],
             image: `${assetUrl}/professionalprojects-cpl-main.png`,
             featured: true
         },
         {
             title: "Nazara Cricket",
             description: "I was a key player in enhancing the gameplay experience of Nazara Cricket, a mobile cricket game featuring detailed player characters, huge collection of typical shots of individual players and real-time multiplayer. ",
-            technologies: ["C++ |", "Cocos2dx"],
+            technologies: ["C++ ", "Cocos2dx"],
             image: `${assetUrl}/professionalprojects-nc-main.png`,
             featured: true
         }
@@ -66,7 +66,8 @@ export const setupProfessionalProjects = () => {
                     </div>
                     <div class="project-tech-list">
                         ${project.technologies.map(tech => {
-                            const bgColor = techColors[tech] || techColors.default;
+                            // Trim any whitespace when looking up colors
+                            const bgColor = techColors[tech.trim()] || techColors.default;
                             return `<span style="
                                 background-color: ${bgColor}; 
                                 color: #333;

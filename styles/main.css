@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@500;600;700&family=Roboto+Mono&display=swap');
+
 :root {
   --primary-dark: white;
   --secondary-dark: #f8f9fa;
@@ -10,8 +12,45 @@
   --accent-dark: #00ACC1;
   /* Keep the darker accent */
   --nav-height: 70px;
+  --font-body: 'Poppins', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
 }
 
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  background-color: var(--primary-dark);
+  color: #fff;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links a {
+  font-family: var(--font-heading);
+  /* rest of styles remain the same */
+}
+
+.nav-dropdown-content a {
+  font-family: var(--font-heading);
+  /* Was: 'Roboto Mono', monospace */
+}
+
+.mobile-menu a {
+  font-family: var(--font-heading);
+  /* Was: 'Roboto Mono', monospace */
+}
+
+.main-heading {
+  font-family: var(--font-heading);
+  /* rest of styles remain the same */
+}
 
 /* Existing Project Card Styles */
 /* New Project Card Styles */
@@ -81,6 +120,7 @@
   padding: 4px 12px;
   border-radius: 16px;
   font-size: 0.9rem;
+  font-family: var(--font-mono);
 }
 
 .project-tech-list-new span {
@@ -94,6 +134,7 @@
 }
 
 .section-title {
+  font-family: var(--font-heading);
   color: #2d3436;
   /* Dark gray for section titles */
 }
@@ -253,7 +294,7 @@
   border: none;
   border-radius: 4px;
   padding: 12px 24px;
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--font-heading);
   font-size: 1rem;
   text-decoration: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -489,12 +530,14 @@
 .contact-page h2 {
   margin-bottom: 20px;
   color: var(--text-primary); /* Ensure heading color matches */
+  font-family: var(--font-heading);
 }
 
 .contact-page label {
   display: block;
   margin-bottom: 5px;
   color: var(--text-primary);
+  font-family: var(--font-heading);
 }
 
 .contact-page input,
@@ -504,6 +547,7 @@
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-family: var(--font-body);
 }
 
 .contact-page button {
@@ -513,6 +557,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: var(--font-heading);
 }
 
 .contact-page button:hover {
