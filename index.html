@@ -333,33 +333,6 @@
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         }
 
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                z-index: 10;
-            }
-
-            .hamburger {
-                display: block;
-            }
-
-            .mobile-menu {
-                display: block;
-            }
-
-            .hamburger.active .line:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
-            }
-
-            .hamburger.active .line:nth-child(2) {
-                opacity: 0;
-            }
-
-            .hamburger.active .line:nth-child(3) {
-                transform: rotate(-45deg) translate(7px, -7px);
-            }
-        }
-
         /* Projects Section */
         .projects-section {
             padding-top: 0;  /* Remove top padding */
@@ -503,37 +476,6 @@
             filter: none;
             transform: scale(1.05);
             /* Added image zoom on hover to match main.css */
-        }
-
-        @media (max-width: 768px) {
-            .project-card {
-                grid-template-columns: 1fr;
-            }
-
-            .project-content,
-            .project-card.project-left .project-content {
-                grid-column: 1 / -1;
-                padding: 40px 20px;
-                text-align: left;
-                background-color: transparent;
-            }
-
-            .project-image,
-            .project-card.project-left .project-image {
-                grid-column: 1 / -1;
-                opacity: 0.25;
-                max-width: 100%;
-            }
-
-            .project-tech-list,
-            .project-card.project-left .project-tech-list {
-                justify-content: flex-start;
-            }
-
-            .project-links,
-            .project-card.project-left .project-links {
-                justify-content: flex-start;
-            }
         }
 
         /* About Section */
@@ -693,13 +635,6 @@
             transform: translate(2px, -2px);
         }
 
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .certifications-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-        }
 
         .skills-list {
             display: grid;
@@ -803,29 +738,117 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .hero-section {
+                min-height: 80vh; /* Reduce height for mobile */
+                margin-bottom: 0; /* Remove negative margin to prevent overlap */
+                padding: 1rem; /* Adjust padding for mobile */
+                justify-content: center; /* Center content on mobile */
+                max-width: 100%;
+            }
+
+            .hero-content {
+                max-width: 100%; /* Prevent overflow */
+                text-align: center; /* Center text on mobile */
+                margin-top: 0; /* Remove negative margin */
+                padding: 0 0.5rem; /* Add padding to prevent edge overlap */
+            }
+
+            .main-heading {
+                font-size: 2rem; /* Reduce font size for mobile */
+            }
+
+            .sub-heading {
+                font-size: 1.5rem; /* Reduce font size for mobile */
+            }
+
+            .description {
+                font-size: 0.9rem; /* Adjust font size for readability */
+                max-width: 100%; /* Prevent overflow */
+            }
+
+            .cta-button {
+                padding: 10px 20px; /* Smaller button on mobile */
+                font-size: 0.9rem;
+            }
+            .nav-links {
+                display: none;
+                z-index: 10;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hamburger.active .line:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .hamburger.active .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .line:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
             .project-card {
-                grid-template-columns: 1fr;
+                display: flex; /* Switch to flexbox for better stacking */
+                flex-direction: column; /* Stack content vertically */
                 gap: 1rem;
-                /* Reduced from default to 1rem to match main.css */
             }
 
-            .project-content {
-                grid-area: 1 / 1 / -1 / -1;
-                padding: 20px;
+            .project-content,
+            .project-card.project-left .project-content {
+                grid-column: 1 / -1; /* Override grid for mobile */
+                padding: 15px;
+                text-align: center; /* Center text on mobile */
+                width: 100%; /* Ensure full width */
+                box-sizing: border-box;
             }
 
-            .project-image {
-                grid-area: 1 / 1 / -1 / -1;
-                opacity: 0.2;
+            .project-image,
+            .project-card.project-left .project-image {
+                grid-column: 1 / -1; /* Override grid for mobile */
+                max-width: 100%;
+                opacity: 0.25;
+            }
+
+            .project-image img {
+                max-height: 200px; /* Reduce image height on mobile */
+            }
+
+            .project-tech-list,
+            .project-card.project-left .project-tech-list {
+                justify-content: center;
+            }
+
+            .project-links,
+            .project-card.project-left .project-links {
+                justify-content: center;
             }
 
             .about-content {
-                grid-template-columns: 1fr;
+                display: flex; /* Switch to flexbox for better stacking */
+                flex-direction: column; /* Stack content vertically */
+                gap: 15px;
+                padding: 0 1rem;
+            }
+
+            .certifications-grid {
+                display: flex; /* Switch to flexbox for better stacking */
+                flex-direction: column; /* Stack cards vertically */
+                gap: 15px;
+            }
+
+            section {
+                margin-bottom: 40px; /* Reduce space between sections on mobile */
             }
 
             .footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
+                padding: 0 1rem;
             }
 
             .social-links {
