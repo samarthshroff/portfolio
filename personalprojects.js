@@ -7,15 +7,14 @@ export const personalProjectsContent = {
             description: `
                 <p>A prototype clone of the famous Vampire Survivor game using C++. This demonstrates:</p>
                 <ul>                    
-                    <li>Use of <strong>Prototype design pattern</strong> for spawning Enemies.</li>
+                    <li><strong>Prototype design pattern</strong> for spawning Enemies.</li>
                     <li><strong>Data-Driven</strong> Enemies information with the use of <strong>Data Table</strong>.</li>
                     <li><strong>Data-Driven</strong> Weapons information with the use of <strong>Data Asset</strong>.</li>
-                    <li>Using <strong>Behavior Tree</strong> for enemies (looking at, chasing and attacking player).</li>
-                    <li>Use of <strong>Gameplay ability system</strong> for possession of weapons and abilities by player and enemies' weapons.</li>
+                    <li><strong>Behavior Tree</strong> for enemies (looking at, chasing and attacking player).</li>
                     <li><strong>Python Script</strong> for generating AttributeSet header and cpp file for each weapon that is child of "Weapon.Hero" Gameplay Tag.</li>
-                    <li> Using <strong>Gameplay Ability System (GAS)</strong> for weapons, pick-ups, passive items and power-ups.</li>
+                    <li><strong>Gameplay Ability System (GAS)</strong> for weapons, pick-ups, passive items and power-ups.</li>
                     <li>Camera Follows the character.</li>                     
-                    <li>Using Enhanced Input System for moving player to the position of mouse clicks and mouse button hold.</li>
+                    <li>Enhanced Input System for moving player to the position of mouse clicks and mouse button hold.</li>
                     <li>Character animations: Idle, BlendSpace for Walk and Run based on speed.</li>
                     <li>Character and Animation imported from Mixamo.</li>                    
                 </ul>
