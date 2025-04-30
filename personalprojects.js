@@ -13,7 +13,8 @@ export const personalProjectsContent = {
                     <li><strong>Behavior Tree</strong> for enemies (looking at, chasing and attacking player).</li>
                     <li><strong>Python Script</strong> for generating AttributeSet header and cpp file for each weapon that is child of "Weapon.Hero" Gameplay Tag.</li>
                     <li><strong>Gameplay Ability System (GAS)</strong> for weapons, pick-ups, passive items and power-ups.</li>
-                    <li>Camera Follows the character.</li>                     
+                    <li>Pause Menu shows Hero's Attributes.</li>
+                    <li>Camera Follows the character.</li>                
                     <li>Enhanced Input System for moving player to the position of mouse clicks and mouse button hold.</li>
                     <li>Character animations: Idle, BlendSpace for Walk and Run based on speed.</li>
                     <li>Character and Animation imported from Mixamo.</li>                    
