@@ -195,28 +195,28 @@ export const setupProfessionalProjects = () => {
         const card = document.createElement('div');
         card.classList.add('project-card-new'); // Use the new class
 
-    card.innerHTML = `
-        <div class="project-image-new">
-            <img src="${project.image}" alt="${project.title}" />
-        </div>
-        <div class="project-content-new">
-            <h3 class="project-title-new">${project.title}</h3>
-            <div class="project-tech-list-new">
-                ${project.technologies.map(tech => {
-                    const bgColor = techColors[tech] || '#f0f0f0';
-                    return `<span style="
-                        background-color: ${bgColor}; 
-                        color: #333;
-                        padding: 4px 12px;
-                        border-radius: 20px;
-                        font-size: 0.85rem;
-                        display: inline-block;
-                        margin: 2px;
-                    ">${tech}</span>`;
-                }).join('')}
+        card.innerHTML = `
+            <div class="project-image-new">
+                <img src="${project.image}" alt="${project.title}" />
             </div>
-        </div>
-    `;
+            <div class="project-content-new">
+                <h3 class="project-title-new">${project.title}</h3>
+                <div class="project-tech-list-new">
+                    ${project.technologies.map(tech => {
+                        const bgColor = techColors[tech] || '#f0f0f0';
+                        return `<span style="
+                            background-color: ${bgColor}; 
+                            color: #333;
+                            padding: 4px 12px;
+                            border-radius: 20px;
+                            font-size: 0.85rem;
+                            display: inline-block;
+                            margin: 2px;
+                        ">${tech}</span>`;
+                    }).join('')}
+                </div>
+            </div>
+        `;
         
         card.onclick = () => openModal(project.title, project.description, project.mediaItems);
         return card;
@@ -230,6 +230,19 @@ export const setupProfessionalProjects = () => {
         const projectCard = createProjectCard(project);
         projectsContainer.appendChild(projectCard);
     });
+
+    // Check for URL parameter and open corresponding modal
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectTitle = urlParams.get('project');
+    if (projectTitle) {
+        const project = professionalProjectsContent.projects.find(p => p.title === projectTitle);
+        if (project) {
+            // Small delay to ensure DOM is ready
+            setTimeout(() => {
+                openModal(project.title, project.description, project.mediaItems);
+            }, 100);
+        }
+    }
 };
 
 // Add this function to define the missing finishDrag function

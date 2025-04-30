@@ -42,9 +42,39 @@ body {
   /* Was: 'Roboto Mono', monospace */
 }
 
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: var(--nav-height);
+  right: 0;
+  width: 75%;
+  height: calc(100vh - var(--nav-height));
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
 .mobile-menu a {
-  font-family: var(--font-heading);
-  /* Was: 'Roboto Mono', monospace */
+  display: block;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: var(--accent);
 }
 
 .main-heading {
@@ -252,7 +282,7 @@ body {
 }
 
 /* Existing Media Queries */
-@media (max-width: 768px) {
+@media only screen and (hover: none) and (pointer: coarse) {
   .about-content {
     grid-template-columns: 1fr;
   }
@@ -348,7 +378,6 @@ body {
   position: relative;
   background: white;
   padding: 30px 20px 20px;
-  /* Add more padding at the top for the close button */
   border-radius: 8px;
   width: 75%;
   max-height: 90vh;
@@ -483,7 +512,7 @@ body {
 }
 
 /* For mobile screens */
-@media (max-width: 768px) {
+@media only screen and (hover: none) and (pointer: coarse) {
   .carousel-control {
     width: 30px;
     height: 30px;
@@ -630,3 +659,122 @@ body {
         color: var(--accent, #4ecdc4);
     }
 }*/
+
+/* Mobile Responsive Styles for Project Details Modal */
+@media only screen and (hover: none) and (pointer: coarse) {
+    .details-modal-content {
+        width: 95%;
+        padding: 15px 10px;
+        margin: 2% auto;
+        gap: 10px;
+    }
+
+    .media-section {
+        margin-bottom: 0.5rem;
+    }
+
+    .description-section {
+        margin-top: 0.5rem;
+    }
+
+    .carousel-item {
+        height: 40vh;
+    }
+
+    .carousel-item img,
+    .carousel-item video {
+        max-height: 40vh;
+    }
+
+    .carousel-control {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .carousel-indicators {
+        margin-top: 8px;
+        gap: 6px;
+    }
+
+    .indicator {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (hover: none) and (pointer: coarse) {
+    .hero-section {
+        min-height: 80vh;
+        margin-bottom: 0;
+        padding: 1rem;
+        justify-content: center;
+        max-width: 100%;
+        margin-top: calc(var(--nav-height) - 20px);
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+        margin-top: -20px;
+        padding: 0 0.5rem;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: var(--nav-height);
+        right: 0;
+        width: 75%;
+        height: calc(100vh - var(--nav-height));
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 1.5rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+    }
+
+    .mobile-menu a {
+        display: block;
+        color: var(--text-primary);
+        text-decoration: none;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.2rem;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        transition: color 0.3s ease;
+    }
+
+    /* Mobile dropdown styles */
+    .mobile-menu .nav-dropdown {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-menu .nav-dropdown-content {
+        display: none;
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        padding-left: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .mobile-menu .nav-dropdown-content a {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+        border-bottom: none;
+    }
+
+    .mobile-menu .nav-dropdown-content a:hover {
+        color: var(--accent);
+    }
+
+    .mobile-menu .nav-dropdown.active .nav-dropdown-content {
+        display: block;
+    }
+}

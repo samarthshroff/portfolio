@@ -48,3 +48,26 @@ document.addEventListener('DOMContentLoaded', () => {
     setupAboutPage();
     console.log('Setup functions called');
 });
+
+// Add hamburger menu functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Add mobile dropdown functionality
+        const mobileDropdowns = mobileMenu.querySelectorAll('.nav-dropdown > a');
+        mobileDropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', (e) => {
+                e.preventDefault();
+                const parent = dropdown.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    }
+});

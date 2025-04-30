@@ -260,7 +260,7 @@
             max-width: 800px;
             position: relative;
             z-index: 2;
-            margin-top: -20%; /* This shifts the content up slightly to align with the background's center */
+            margin-top: -16%; /* This shifts the content up slightly to align with the background's center */
         }
 
         .hero-content h1,
@@ -737,7 +737,7 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media only screen and (hover: none) and (pointer: coarse) {
             .hero-section {
                 min-height: 80vh; /* Reduce height for mobile */
                 margin-bottom: 0; /* Remove negative margin to prevent overlap */
@@ -749,8 +749,10 @@
             .hero-content {
                 max-width: 100%; /* Prevent overflow */
                 text-align: center; /* Center text on mobile */
-                margin-top: 0; /* Remove negative margin */
+                margin-top: -20%; /* Remove negative margin */
                 padding: 0 0.5rem; /* Add padding to prevent edge overlap */
+                vertical-align: center;
+                margin-bottom: 20%;
             }
 
             .main-heading {
