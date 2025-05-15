@@ -7,7 +7,7 @@ export const professionalProjectsContent = {
             description: `
                 <p>An app generating $10M in annual revenue and 2M monthly active users (MAU). My contributions are mainly towards Game Development, Platform SDK Development and Revenue Optimization:</p>
                 <ul>
-                    <li>Revenue & Conversion Enhancement: Increased yearly revenue by $500K and conversion rates by 20% through the development and implementation of a localized paywall and purchase system.</li>
+                    <li>Revenue & Conversion Enhancement: Developed a data-driven in-app purchase system with localization and redesigned paywall, resulting in a projected $500K annual revenue increase and a 20% boost in conversion.</li>
                     <li>Maintenance Reduction: Decreased project maintenance complexity by 40% through the implementation of a forced update system.</li>
                     <li>User Engagement Improvement: Boosted user engagement by 30% through the integration of comprehensive analytics services.</li>
                     <li>Performance Optimization: Optimized app performance using Firebase Remote Config for A/B testing and real-time updates. Further enhanced user experience and reduced app size by designing an asset delivery system utilizing Unity Addressables.</li>
