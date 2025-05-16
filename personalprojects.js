@@ -3,9 +3,9 @@ const assetUrl = '/r2' || '';
 export const personalProjectsContent = {
     projects: [
         {
-            title: "Vampire Survivor Clone Prototype",
+            title: "Vampire Survivor-style project (Currently developing)",
             description: `
-                <p>A prototype clone of the famous Vampire Survivor game using C++. This demonstrates:</p>
+                <p>Currently developing a Vampire Survivor-style rogue like shooter game using C++. This demonstrates:</p>
                 <ul>                    
                     <li><strong>Prototype design pattern</strong> for spawning Enemies.</li>
                     <li><strong>Data-Driven</strong> Enemies information with the use of <strong>Data Table</strong>.</li>
@@ -13,15 +13,14 @@ export const personalProjectsContent = {
                     <li><strong>Behavior Tree</strong> for enemies (looking at, chasing and attacking player).</li>
                     <li><strong>Python Script</strong> for generating AttributeSet header and cpp file for each weapon that is child of "Weapon.Hero" Gameplay Tag.</li>
                     <li><strong>Gameplay Ability System (GAS)</strong> for weapons, pick-ups, passive items and power-ups.</li>
-                    <li>Pause Menu shows Hero's Attributes.</li>
+                    <li>Pause Menu shows Hero's Attributes.</li>                    
                     <li>Camera Follows the character.</li>                
                     <li>Enhanced Input System for moving player to the position of mouse clicks and mouse button hold.</li>
                     <li>Character animations: Idle, BlendSpace for Walk and Run based on speed.</li>
-                    <li>Character and Animation imported from Mixamo.</li>                    
+                    <li>Character and Animation imported from Mixamo.</li>              
                 </ul>
                 <p>To-do:</p>
                 <ul>                    
-                    <li>Advanced AI Logic using Behavior Tree for Enemies.</li>
                     <li>Niagara Effects, Health and UI widgets.</li>
                 </ul>
             `,
@@ -30,8 +29,8 @@ export const personalProjectsContent = {
             githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
             mediaItems: [
                 { type: 'image', src: `${assetUrl}/personalprojects-vsc-splash.png` },
-                { type: 'image', src: `${assetUrl}/personalprojects-vsc-1.png` },
-                { type: 'video', src: `${assetUrl}/personalprojects-vsc-vid` }
+                { type: 'image', src: `${assetUrl}/personalprojects-vsc-1.png` }//,
+                //{ type: 'video', src: `${assetUrl}/personalprojects-vsc-vid` }
             ]
         },
         {
