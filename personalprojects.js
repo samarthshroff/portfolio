@@ -3,7 +3,7 @@ const assetUrl = '/r2' || '';
 export const personalProjectsContent = {
     projects: [
         {
-            title: "Vampire Survivor-style project (Currently developing)",
+            title: "Sentinel's Scourge (Currently developing)",
             description: `
                 <p>Currently developing a Vampire Survivor-style rogue like shooter game using C++. This demonstrates:</p>
                 <ul>                    
@@ -25,10 +25,10 @@ export const personalProjectsContent = {
                 </ul>
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
-            image: `${assetUrl}/personalprojects-vsc-splash.png`,
+            image: `${assetUrl}/personalprojects-vsc-splash.jpg`,
             githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
             mediaItems: [
-                { type: 'image', src: `${assetUrl}/personalprojects-vsc-splash.png` },
+                { type: 'image', src: `${assetUrl}/personalprojects-vsc-splash.jpg` },
                 { type: 'image', src: `${assetUrl}/personalprojects-vsc-1.png` }//,
                 //{ type: 'video', src: `${assetUrl}/personalprojects-vsc-vid` }
             ]
