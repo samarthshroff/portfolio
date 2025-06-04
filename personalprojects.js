@@ -121,7 +121,7 @@ export const personalProjectsContent = {
             githubLink: "https://github.com/samarthshroff/ClimbForge",
             mediaItems: [
                 { type: 'image', src: `${assetUrl}/personalprojects-cf-splash.jpg` },
-                { type: 'image', src: `${assetUrl}/personalprojects-cf-videocoming.jpg` }//,
+                { type: 'video', src: `${assetUrl}/personalprojects-cf-vid` }//,
                 //{ type: 'video', src: `${assetUrl}/personalprojects-vsc-vid` }
             ]
         },
