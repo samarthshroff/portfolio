@@ -157,17 +157,24 @@ export const personalProjectsContent = {
         {
             title: "Freecell",
             description: `
-                <p>A simple freecell core game demo in python.</p>
+                <p><strong>Interactive FreeCell Solitaire:</strong> Playable version of the classic FreeCell game with drag-and-drop controls.</p>
                 <ul>
-                    <li>Feature 1: Description of feature 1</li>
-                    <li>Feature 2: Description of feature 2</li>
-                    <li>Feature 3: Description of feature 3</li>
-                </ul>
-                <p>Improvements:</p>
-                <ul>
-                    <li>Add double click prediction for moving the cards to either free cells or home cells.</li>
-                    <li>Add hints and undo.</li>
-                    <li>Add UI, timer and game win/over condition.</li>
+                    <li><strong>Python &amp; Pygame:</strong> Built using the <code>pygame</code> library for window management, graphics rendering, and event handling.</li>
+                    <li><strong>Splash Screen:</strong> Shows a custom splash screen on startup for a polished look.</li>
+                    <li><strong>Mouse-Driven Card Movement:</strong> Click and drag cards between free cells, home cells, and cascade piles using intuitive mouse controls.</li>
+                    <li><strong>Rule-Based Card Placement:</strong> Enforces FreeCell rules for valid card moves (rank/suit checks, legal placements).</li>
+                    <li><strong>Dynamic UI Layout:</strong> Board positions for free cells, home cells, and cascades are generated programmatically.</li>
+                    <li><strong>Object-Oriented Design:</strong> Modular code with clear classes for cards, game logic, and UI rendering.</li>
+                    <li><strong>Custom Card Graphics:</strong> Loads and displays PNG card images dynamically.</li>
+                    <li><strong>Enumerations &amp; Dataclasses:</strong> Uses Python <code>enum</code> and <code>dataclass</code> for clean card and move representations.</li>
+                    </ul>
+
+                    <h3>Python Techniques Highlighted</h3>
+                    <ul>
+                    <li><strong>OOP Principles:</strong> Classes structure the game logic and GUI components.</li>
+                    <li><strong>Enums &amp; Dataclasses:</strong> For precise card properties and move handling.</li>
+                    <li><strong>Event-driven Programming:</strong> Handles user inputs via Pygame’s event queue.</li>
+                    <li><strong>Real-time Rendering:</strong> Game loop with smooth redrawing and timing.</li>
                 </ul>
             `,
             technologies: ["Python", "PyGame"],
