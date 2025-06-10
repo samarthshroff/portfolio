@@ -274,7 +274,7 @@ export const personalProjectsContent = {
         {
             title: "Third Person Shooter",
             description: `
-                <p>A third person shooter prototype using C++. This demonstrates:</p>
+                <p>A third person shooter prototype using C++. <strong><em>This project is currently shelved as I focus on other initiatives. While development isn't ongoing, it still represents key skills, concepts, and problem-solving approaches that I explored during its creation.</em></strong></p>
                 <ul>
                     <li>Character animations: Idle, BlendSpace for Walk and Run, Jump, Strafe run and walk based on speed and direction.</li>
                     <li>A Data driven (using Data table) weapon system using <strong>Flyweight design pattern</strong> for switching between weapons based on key press (1,2 and 3)</li>
