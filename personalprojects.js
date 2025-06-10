@@ -97,7 +97,7 @@ export const personalProjectsContent = {
                 <li>
                     <strong>EnemyData &amp; EnemySpawner</strong>
                     <ul>
-                    <li>Data-driven enemy spawning and initialization, supporting procedural encounters and scalable content addition.</li>
+                    <li>Data-driven enemy spawning and initialization, enabling dynamic and varied enemy encounters for increased replay ability and scalable content addition.</li>
                     </ul>
                 </li>
                 <li>
