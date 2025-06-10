@@ -5,24 +5,112 @@ export const personalProjectsContent = {
         {
             title: "Sentinel's Scourge (Currently developing)",
             description: `
-                <p>Currently developing a Vampire Survivor-style rogue like shooter game using C++. This demonstrates:</p>
-                <ul>                    
-                    <li><strong>Prototype design pattern</strong> for spawning Enemies.</li>
-                    <li><strong>Data-Driven</strong> Enemies information with the use of <strong>Data Table</strong>.</li>
-                    <li><strong>Data-Driven</strong> Weapons information with the use of <strong>Data Asset</strong>.</li>
-                    <li><strong>Behavior Tree</strong> for enemies (looking at, chasing and attacking player).</li>
-                    <li><strong>Python Script</strong> for generating AttributeSet header and cpp file for each weapon that is child of "Weapon.Hero" Gameplay Tag.</li>
-                    <li><strong>Gameplay Ability System (GAS)</strong> for weapons, pick-ups, passive items and power-ups.</li>
-                    <li>Pause Menu shows Hero's Attributes.</li>                    
-                    <li>Camera Follows the character.</li>                
-                    <li>Enhanced Input System for moving player to the position of mouse clicks and mouse button hold.</li>
-                    <li>Character animations: Idle, BlendSpace for Walk and Run based on speed.</li>
-                    <li>Character and Animation imported from Mixamo.</li>              
+                <h1>SentinelsScourge – Technical Release Notes</h1>
+
+                <p>
+                <strong>SentinelsScourge</strong> is a feature-rich Unreal Engine project demonstrating advanced gameplay systems, procedural content generation, and robust code architecture. The project leverages a variety of powerful Unreal Engine features and programming best practices to deliver scalable, dynamic, and polished gameplay experiences.
+                </p>
+
+                <h2>Key Unreal Engine Features</h2>
+                <ul>
+                <li>
+                    <strong>Gameplay Ability System Integration</strong>
+                    <ul>
+                    <li>Deep integration with Unreal’s Gameplay Ability System (GAS) for highly modular, extensible character abilities and effects.</li>
+                    <li>Custom BlueprintFunctionLibrary (<code>SSAbilitySystemLibrary</code>) for querying and manipulating gameplay tags and attributes at runtime and via Python scripting.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Dynamic Attribute Management</strong>
+                    <ul>
+                    <li>Automated generation of AttributeSet C++ classes for both weapons and enemies using custom Python scripts, based on gameplay tags.</li>
+                    <li>Supports rapid extension and maintenance of new weapons/enemies with unique stats, reducing boilerplate and human error.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Data-Driven Gameplay Effects</strong>
+                    <ul>
+                    <li>Tools for importing and updating gameplay effects (e.g., player attributes) from external CSV files, streamlining balancing and iteration.</li>
+                    <li>Attribute and effect data stored and updated as Unreal assets programmatically.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Advanced AI with Behavior Trees</strong>
+                    <ul>
+                    <li>Enemy AI utilizes Unreal’s Behavior Tree system, with custom <code>AEnemyAIController</code> classes, blackboards, and perception components for sophisticated decision-making.</li>
+                    <li>Enemy spawner and data asset system for efficient, asynchronous loading of skeletal meshes, animation blueprints, and montage assets for diverse enemy types.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Weapon and Combat Architecture</strong>
+                    <ul>
+                    <li>Modular weapon system using <code>UWeaponData</code> data assets, supporting a rich taxonomy of weapon categories and behaviors (e.g., projectile, melee, unique, transformative).</li>
+                    <li>Gameplay tags and effect replication tailored for both PvE and PvP scenarios.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Efficient Asset Management</strong>
+                    <ul>
+                    <li>Asynchronous asset streaming for meshes, animations, and effects to optimize performance and minimize loading hitches during gameplay.</li>
+                    <li>Delegates and soft object pointers ensure assets are loaded and initialized on-demand.</li>
+                    </ul>
+                </li>
                 </ul>
-                <p>To-do:</p>
-                <ul>                    
-                    <li>Niagara Effects, Health and UI widgets.</li>
+
+                <h2>Advanced Programming Techniques</h2>
+                <ul>
+                <li>
+                    <strong>Python Scripting for Editor Automation</strong>
+                    <ul>
+                    <li>In-editor Python scripts automate repetitive Unreal Engine C++/Blueprint tasks, such as generating new AttributeSet classes and updating gameplay effect assets.</li>
+                    <li>Enables rapid prototyping and batch operations without recompiling or restarting the Unreal Editor.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>C++ Polymorphism and Interface Design</strong>
+                    <ul>
+                    <li>Extensive use of interfaces (e.g., <code>ISSGameplayAbilityInterface</code>) for ability contract enforcement and component-based architecture.</li>
+                    <li><code>TSubclassOf</code>, <code>TObjectPtr</code>, and <code>UDataAsset</code> patterns used throughout for safe, extensible asset referencing.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Robust Modularization</strong>
+                    <ul>
+                    <li>Clear separation of concerns between character, weapon, enemy, and ability logic.</li>
+                    <li>Public/private headers and generated code directories used for organization and scalability.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Blueprint/C++ Hybrid Approach</strong>
+                    <ul>
+                    <li>Exposes key systems and data to Blueprints for designer extensibility while keeping core logic in performant C++ modules.</li>
+                    </ul>
+                </li>
                 </ul>
+
+                <h2>Notable Systems and Components</h2>
+                <ul>
+                <li>
+                    <strong>HeroAbilitySystemComponent &amp; WeaponManager</strong>
+                    <ul>
+                    <li>Handles ability cooldowns, weapon initialization, and effect application, enabling complex player progression and customization.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>EnemyData &amp; EnemySpawner</strong>
+                    <ul>
+                    <li>Data-driven enemy spawning and initialization, supporting procedural encounters and scalable content addition.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Custom Gameplay Tags</strong>
+                    <ul>
+                    <li>Rich taxonomy of gameplay tags for weapon categories, cooldowns, and effect types, facilitating highly modular gameplay logic.</li>
+                    </ul>
+                </li>
+                </ul>
+
+                <hr />
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
             image: `${assetUrl}/personalprojects-vsc-splash.jpg`,
