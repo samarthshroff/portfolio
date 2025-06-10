@@ -117,8 +117,8 @@ export const personalProjectsContent = {
             githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
             mediaItems: [
                 { type: 'image', src: `${assetUrl}/personalprojects-vsc-splash.jpg` },
-                { type: 'image', src: `${assetUrl}/personalprojects-vsc-1.png` }//,
-                //{ type: 'video', src: `${assetUrl}/personalprojects-vsc-vid` }
+                { type: 'image', src: `${assetUrl}/personalprojects-vsc-1.png` },
+                { type: 'video', src: `${assetUrl}/personalprojects-vsc-vid` }
             ]
         },
         {
