@@ -21,8 +21,8 @@ export const personalProjectsContent = {
                 <li>
                     <strong>Dynamic Attribute Management</strong>
                     <ul>
-                    <li>Automated generation of AttributeSet C++ classes for both weapons and enemies using custom Python scripts, based on gameplay tags.</li>
-                    <li>Supports rapid extension and maintenance of new weapons/enemies with unique stats, reducing boilerplate and human error.</li>
+                    <li>Automated generation of AttributeSet C++ classes for both weapons <s>and enemies</s> using custom Python scripts, based on gameplay tags.</li>
+                    <li>Supports rapid extension and maintenance of new weapons<s>/enemies</s> with unique stats, reducing boilerplate and human error.</li>
                     </ul>
                 </li>
                 <li>
