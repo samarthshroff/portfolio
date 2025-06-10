@@ -112,7 +112,7 @@ export const personalProjectsContent = {
             `,
             technologies: ["Unreal 5.5", "C++", "Python"],
             image: `${assetUrl}/personalprojects-vsc-splash.jpg`,
-            githubLink: "https://github.com/samarthshroff/VampireSurvivorClone",
+            githubLink: "https://github.com/samarthshroff/SentinelsScourge",
             mediaItems: [
                 { type: 'image', src: `${assetUrl}/personalprojects-vsc-splash.jpg` },
                 { type: 'image', src: `${assetUrl}/personalprojects-vsc-1.png` },
