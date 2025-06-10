@@ -6,7 +6,7 @@ export const personalProjectsContent = {
             title: "Sentinel's Scourge (Currently developing)",
             description: `
                 <p>
-                <strong>SentinelsScourge</strong> is a feature-rich Unreal Engine project demonstrating advanced gameplay systems, procedural content generation, and robust code architecture. The project leverages a variety of powerful Unreal Engine features and programming best practices to deliver scalable, dynamic, and polished gameplay experiences.
+                <strong>Sentinel's Scourge</strong> is a feature-rich Unreal Engine project demonstrating advanced gameplay systems, procedural content generation, and robust code architecture. The project leverages a variety of powerful Unreal Engine features and programming best practices to deliver scalable, dynamic, and polished gameplay experiences.
                 </p>
 
                 <h2>Key Unreal Engine Features</h2>
