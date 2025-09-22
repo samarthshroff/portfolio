@@ -123,8 +123,6 @@ export const personalProjectsContent = {
             title: "ClimbForge",
             description: `
                 <p>
-                    <strong>**New video coming soon**</strong>
-                <p>
                     <strong>ClimbForge</strong> is an advanced Unreal Engine climbing movement system, inspired by the fluid traversal mechanics seen in <em>The Legend of Zelda</em> series (though not an exact replica).
                     Designed for extensibility and as a technical showcase, this release highlights the following key Unreal Engine integrations and vector math features:
                 </p>
