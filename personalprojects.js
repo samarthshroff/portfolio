@@ -129,76 +129,100 @@ export const personalProjectsContent = {
                 <h2>Unreal Engine Features</h2>
                 <ul>
                     <li>
-                    <strong>Custom Movement Modes:</strong>
-                    Implements a custom climbing movement mode through UE’s extensible movement system (<code>MOVE_Custom</code>, <code>MOVE_Climbing</code>), including smooth transitions between walking, climbing, vaulting, and falling.
+                        <strong>Custom Movement Modes:</strong>
+                        Implements a custom climbing movement mode through UE’s extensible movement system (<code>MOVE_Custom</code>, <code>MOVE_Climbing</code>), including smooth transitions between walking, climbing, vaulting, and falling.
                     </li>
                     <li>
-                    <strong>Component-Based Design:</strong>
-                    Utilizes custom components (<code>UClimbForgeMovementComponent</code>, <code>UMotionWarpingComponent</code>) for modularity and maintainability.
+                        <strong>Climb Dash Mechanic:</strong>
+                        Implements a climb dash feature allowing the character to dash in various directions while climbing, including support for distinct dash montages and customizable dash curves.
                     </li>
                     <li>
-                    <strong>Blueprint &amp; C++ Hybrid:</strong>
-                    Core climbing logic is written in C++ for optimal performance, exposed to Blueprints for designer-friendly tuning and animation montage integration.
+                        <strong>Dynamic Vault Trace Configuration:</strong>
+                        Exposes minimum and maximum vault trace distances and vault vertical trace depth as configurable parameters, enabling fine-tuning of vault detection behavior.
                     </li>
                     <li>
-                    <strong>Enhanced Input System:</strong>
-                    Full support for Unreal’s Enhanced Input system, with context-based input mappings for climbing, hopping, and movement actions.
+                        <strong>Component-Based Design:</strong>
+                        Utilizes custom components (<code>UClimbForgeMovementComponent</code>, <code>UMotionWarpingComponent</code>) for modularity and maintainability.
                     </li>
                     <li>
-                    <strong>Animation Integration:</strong>
-                    Custom <code>UCharacterAnimInstance</code> class synchronizes animation states (GroundSpeed, AirSpeed, ClimbVelocity) with real-time physics and climbing state.
+                        <strong>Component Accessors:</strong>
+                        Provides accessor functions for the custom movement and motion warping components, as well as camera and spring arm components, for streamlined integration and extension.
                     </li>
                     <li>
-                    <strong>AnimMontage Integration:</strong>
-                    Plays context-sensitive animation montages (e.g., climb, vault, hop) using Unreal’s animation system, with root motion support and event-driven state transitions.
+                        <strong>Blueprint &amp; C++ Hybrid:</strong>
+                        Core climbing logic is written in C++ for optimal performance, exposed to Blueprints for designer-friendly tuning and animation montage integration.
                     </li>
                     <li>
-                    <strong>Motion Warping:</strong>
-                    Employs Unreal’s Motion Warping component to dynamically adjust character position and orientation during complex traversal animations.
+                        <strong>Enhanced Input System:</strong>
+                        Full support for Unreal’s Enhanced Input system, with context-based input mappings for climbing, hopping, and movement actions.
                     </li>
                     <li>
-                    <strong>Trace &amp; Collision Systems:</strong>
-                    Advanced use of line and capsule traces to detect climbable surfaces, ledges, and vault opportunities, configurable via Blueprint-exposed properties.
+                        <strong>Animation Integration:</strong>
+                        Custom <code>UCharacterAnimInstance</code> class synchronizes animation states (GroundSpeed, AirSpeed, ClimbVelocity) with real-time physics and climbing state.
                     </li>
                     <li>
-                    <strong>Trace Utilities:</strong>
-                    Implements capsule and line traces (<code>SweepMultiByChannel</code>, <code>LineTraceSingleByChannel</code>) for precise environment interaction, using Unreal’s collision and debug drawing systems.
+                        <strong>AnimMontage Integration:</strong>
+                        Plays context-sensitive animation montages (e.g., climb, vault, hop) using Unreal’s animation system, with root motion support and event-driven state transitions.
                     </li>
                     <li>
-                    <strong>Physics &amp; Root Motion:</strong>
-                    Constrained root motion velocity and customized acceleration/deceleration for realistic climbing feel.
+                        <strong>Motion Warping:</strong>
+                        Employs Unreal’s Motion Warping component to dynamically adjust character position and orientation during complex traversal animations.
+                    </li>
+                    <li>
+                        <strong>Trace &amp; Collision Systems:</strong>
+                        Advanced use of line and capsule traces to detect climbable surfaces, ledges, and vault opportunities, configurable via Blueprint-exposed properties.
+                    </li>
+                    <li>
+                        <strong>Trace Utilities:</strong>
+                        Implements capsule and line traces (<code>SweepMultiByChannel</code>, <code>LineTraceSingleByChannel</code>) for precise environment interaction, using Unreal’s collision and debug drawing systems.
+                    </li>
+                    <li>
+                        <strong>Physics &amp; Root Motion:</strong>
+                        Constrained root motion velocity and customized acceleration/deceleration for realistic climbing feel.
+                    </li>
+                    <li>
+                        <strong>Debug Utilities:</strong>
+                        Includes a debug helper namespace to print messages both to the on-screen display and the log, facilitating rapid prototyping and visualization during development.
+                    </li>
+                    <li>
+                        <strong>Floor Detection and Climb Termination:</strong>
+                        Contains logic for detecting when the character has reached the floor after climbing down from a ledge and for handling the proper transition to ground movement.
                     </li>
                 </ul>
 
                 <h2>Vector Math Highlights</h2>
                 <ul>
                     <li>
-                    <strong>Surface Normal and Direction Calculation:</strong>
-                    Extensively uses <code>FVector</code>, dot/cross products, and angle calculations to align the character with climbable surfaces and determine climb direction.
+                        <strong>Surface Normal and Direction Calculation:</strong>
+                        Extensively uses <code>FVector</code>, dot/cross products, and angle calculations to align the character with climbable surfaces and determine climb direction.
                     </li>
                     <li>
-                    <strong>Climbable Angle Detection:</strong>
-                    Determines climbability via dot product and angle threshold (<code>theta = acos(a·b/|a||b|)</code>), ensuring only surfaces within a configurable angle can be climbed.
+                        <strong>Climbable Angle Detection:</strong>
+                        Determines climbability via dot product and angle threshold (<code>theta = acos(a·b/|a||b|)</code>), ensuring only surfaces within a configurable angle can be climbed.
                     </li>
                     <li>
-                    <strong>Directional Hopping:</strong>
-                    Determines hop direction and eligibility via vector dot products between input and local axes, supporting up, down, left, and right hops.
+                        <strong>Directional Hopping:</strong>
+                        Determines hop direction and eligibility via vector dot products between input and local axes, supporting up, down, left, and right hops.
                     </li>
                     <li>
-                    <strong>Ledge &amp; Floor Detection:</strong>
-                    Uses vector-based logic to identify ledges and floors, enabling context-aware transitions between climbing, vaulting, and walking.
+                        <strong>Ledge &amp; Floor Detection:</strong>
+                        Uses vector-based logic to identify ledges and floors, enabling context-aware transitions between climbing, vaulting, and walking.
                     </li>
                     <li>
-                    <strong>Input-Driven Movement Vectors:</strong>
-                    Translates 2D input vectors into 3D world-space movement using rotation matrices and axis projections.
+                        <strong>Input-Driven Movement Vectors:</strong>
+                        Translates 2D input vectors into 3D world-space movement using rotation matrices and axis projections.
                     </li>
                     <li>
-                    <strong>Dynamic Climbing Velocity:</strong>
-                    Handles rotation and projection of velocity vectors to ensure movement is always aligned with the climbing surface, including “unrotating” velocity using quaternions (<code>UKismetMathLibrary::Quat_UnrotateVector</code>).
+                        <strong>Dynamic Climbing Velocity:</strong>
+                        Handles rotation and projection of velocity vectors to ensure movement is always aligned with the climbing surface, including “unrotating” velocity using quaternions (<code>UKismetMathLibrary::Quat_UnrotateVector</code>).
                     </li>
                     <li>
-                    <strong>Trace Calculations:</strong>
-                    All traces (for climb, ledge, vault, etc.) are positionally offset and use vector math for direction, length, and surface normal evaluation.
+                        <strong>Dynamic Climb Trace Length:</strong>
+                        Adjusts trace length for climb detection dynamically based on the steepness of the surface, improving responsiveness and accuracy when transitioning between surface types.
+                    </li>
+                    <li>
+                        <strong>Trace Calculations:</strong>
+                        All traces (for climb, ledge, vault, etc.) are positionally offset and use vector math for direction, length, and surface normal evaluation.
                     </li>
                 </ul>
             `,
